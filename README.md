@@ -113,8 +113,10 @@ Advanced analysis of bottom lanes for Draft and Lane Phase Control.
 | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/7/7d/Zeri_OriginalSquare.png" width="25"> Zeri + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/6/6c/Yuumi_OriginalSquare.png" width="25"> Yuumi | 🟢 LOW | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/d/d2/Nautilus_OriginalSquare.png" width="20"> <img src="https://static.wikia.nocookie.net/leagueoflegends/images/c/c4/Pyke_OriginalSquare.png" width="20"> | 53.2% | Free scaling. Punish with Calibrum at max range. Infernum R in teamfight wins alone. |
 | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/6/65/Jinx_OriginalSquare.png" width="25"> Jinx + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/b/bb/Lulu_OriginalSquare.png" width="25"> Lulu | 🟡 MEDIUM| <img src="https://static.wikia.nocookie.net/leagueoflegends/images/a/ac/Blitzcrank_OriginalSquare.png" width="20"> | 50.1% | Avoid 1v1 trades. Focus on peel. Save Gravitum for their engage or to break their speed buff. |
 | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/f/f2/Draven_OriginalSquare.png" width="25"> Draven + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/b/ba/Leona_OriginalSquare.png" width="25"> Leona| 💀 LETHAL| <img src="https://static.wikia.nocookie.net/leagueoflegends/images/7/79/Morgana_OriginalSquare.png" width="20"> <img src="https://static.wikia.nocookie.net/leagueoflegends/images/3/3f/Janna_OriginalSquare.png" width="20"> | 42.5% | **DANGER**. Do not push the wave. Play safe. Use Severum to heal from poke damage. |
-| <img src="https://static.wikia.nocookie.net/leagueoflegends/images/3/31/Samira_OriginalSquare.png" width="25"> Samira + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/c/ce/Rell_OriginalSquare.png" width="25"> Rell | 🟡 MEDIUM| <img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/ee/Alistar_OriginalSquare.png" width="20"> | 49.8% | Keep Gravitum Q ready. Cancel her ultimate instantly. Never waste Infernum R into her W. |
+| <img src="https://static.wikia.nocookie.net/leagueoflegends/images/3/31/Samira_OriginalSquare.png" width="25"> Samira + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/c/ce/Rell_OriginalSquare.png" width="25"> Rell | 🟡 MEDIUM | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/e/ee/Alistar_OriginalSquare.png" width="20"> | 49.8% | Keep Gravitum Q ready. Cancel her ultimate instantly. Never waste Infernum R inside her W. |
 | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/3/35/Caitlyn_OriginalSquare.png" width="25"> Caitlyn + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Lux_OriginalSquare.png/revision/latest?cb=20150402220552" width="25"> Lux | 🔴 HIGH | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/6/65/Soraka_OriginalSquare.png" width="20"> | 47.1% | They will zone you. Fast wave clear with Infernum to prevent getting trapped under tower taking free poke. |
+| <img src="https://static.wikia.nocookie.net/leagueoflegends/images/5/54/Ezreal_OriginalSquare.png" width="25"> Ezreal + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/f/f7/Karma_OriginalSquare.png" width="25"> Karma | 🟢 LOW | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/b/bb/Lulu_OriginalSquare.png" width="20"> | 54.0% | Hide behind minions to block Poke. Punish with Crescendum if they waste cooldowns. |
+| <img src="https://static.wikia.nocookie.net/leagueoflegends/images/4/4e/Xayah_OriginalSquare.png" width="25"> Xayah + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/9/9a/Rakan_OriginalSquare.png" width="25"> Rakan | 🟡 MEDIUM | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/d/d2/Nautilus_OriginalSquare.png" width="20"> | 49.2% | Beware of floor feathers. Gravitum to root if they attempt engage with R-W combo. |
 
 ---
 
@@ -127,6 +129,11 @@ Advanced analysis of bottom lanes for Draft and Lane Phase Control.
 | **Lulu** | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/b/bb/Lulu_OriginalSquare.png" width="30"> | 🟢 **S** | Buff/Protect | Attack speed buff with Crescendum active is the highest DPS in LoL. |
 | **Nautilus**| <img src="https://static.wikia.nocookie.net/leagueoflegends/images/d/d2/Nautilus_OriginalSquare.png" width="30"> | 🟢 **S** | Lockdown CC | Infinite CC chain: `Nautilus R -> Auto -> Gravitum Root`. Secured kill. |
 | **Braum** | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/2/28/Braum_OriginalSquare.png" width="30"> | 🟡 **A** | Defense | Intercepts key projectiles while you stack Crescendum at close distance. |
+| **Soraka** | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/6/65/Soraka_OriginalSquare.png" width="30"> | 🟡 **A** | Sustain | Continuous trade support. Your Severum heals you, she heals you too. |
+| **Nami** | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/d/d2/Nami_OriginalSquare.png" width="30"> | 🟡 **A** | Trade Buff | Provides speed and healing to win short trading patterns. |
+| **Morgana**| <img src="https://static.wikia.nocookie.net/leagueoflegends/images/7/79/Morgana_OriginalSquare.png" width="30"> | 🟡 **A** | Anti-CC | `Black Shield` prevents lockdowns if you enter with Crescendum at close range. |
+| **Yuumi** | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/6/6c/Yuumi_OriginalSquare.png" width="30"> | 🔴 **C** | AFK Buff | Very weak early. Leaves you vulnerable to ganks and aggressive hooks. |
+| **Brand/Lux**| <img src="https://static.wikia.nocookie.net/leagueoflegends/images/b/bf/Lux_OriginalSquare.png" width="30"> | 🔴 **C** | Mage Setup | Steals gold, offers no peel. Only works if you master target positions 100%. |
 
 ---
 
@@ -155,6 +162,42 @@ Auto-Spacing is not just moving fast; it's a **dynamic distance adjustment based
 | **`T + 0.25s`** | **Projectile Impact** | Projectile **LEAVES** weapon. | **CRITICAL MOMENT**. Damage computed. |
 | **`T + 0.26s`** | **`Right Click`** (Backward)| **Backswing Cancel** | Cut final animation. Aphelios starts retreat 0.3s early. |
 | **`T + 0.30s - 0.80s`**| `Maintain Movement` | Cooldown Wait (Interval) | **Safety Zone**. Enemy cannot reach you while you backing. |
+
+---
+
+#### 📏 4.3. Tactical Range Visualization (Range-Spacing)
+
+<div align="center">
+  <h3>Safety Distance vs Burst Zone</h3>
+  <table border="0">
+    <tr>
+      <td><img src="https://static.wikia.nocookie.net/leagueoflegends/images/0/00/Aphelios_Calibrum.png" width="30"> <b>Calibrum</b></td>
+      <td><code>🟢 [650]</code></td>
+      <td>🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 🎯</td>
+    </tr>
+    <tr>
+      <td><img src="https://static.wikia.nocookie.net/leagueoflegends/images/2/2a/Aphelios_Severum.png" width="30"> <b>Severum</b></td>
+      <td><code>🔴 [550]</code></td>
+      <td>🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥 🎯</td>
+    </tr>
+    <tr>
+      <td><img src="https://static.wikia.nocookie.net/leagueoflegends/images/4/4b/Aphelios_Gravitum.png" width="30"> <b>Gravitum</b></td>
+      <td><code>🟣 [550]</code></td>
+      <td>🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 🎯</td>
+    </tr>
+    <tr>
+      <td><img src="https://static.wikia.nocookie.net/leagueoflegends/images/b/bb/Aphelios_Infernum.png" width="30"> <b>Infernum</b></td>
+      <td><code>🔵 [550]</code></td>
+      <td>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 🎯</td>
+    </tr>
+    <tr>
+      <td><img src="https://static.wikia.nocookie.net/leagueoflegends/images/8/84/Aphelios_Crescendum.png" width="30"> <b>Crescendum</b></td>
+      <td><code>⚪ [525]</code></td>
+      <td>⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 🎯</td>
+    </tr>
+  </table>
+  <p><i>Note: Less range (Crescendum) = Higher DPS due to fast boomerang return. More range (Calibrum) = Higher safety and spacing.</i></p>
+</div>
 
 ---
 
@@ -194,6 +237,9 @@ To activate the **Apex Rotation**, you must deplete weapons in this strict order
 | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/5/55/Ocean_DrakeSquare.png" width="30"> Ocean | ⭐ **S+** | Heal Regen (Sustain) | Aphelios lacks mobility. Passive regen allows continuous trades without backing. Vital with Severum. |
 | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/2/25/Hextech_DrakeSquare.png" width="30"> Hextech | 🟢 **S** | Attack Speed & Slow | Chain damage boosts scaling with Crescendum. Portals grant the missing heavy rotation tool. |
 | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/a/a0/Infernal_DrakeSquare.png" width="30"> Infernal | 🟢 **S** | Adaptive Damage (AD) | As Hypercarry, AD bonus multiplies Teamfight damage with Infernum or Calibrum massively. |
+| <img src="https://static.wikia.nocookie.net/leagueoflegends/images/0/00/Mountain_DrakeSquare.png" width="30"> Mountain | 🟡 **A** | Armor & Magic Resist | Very useful against Burst / Assassins. Increases reaction window by 1.5s for support saves. |
+| <img src="https://static.wikia.nocookie.net/leagueoflegends/images/b/bd/Chemtech_DrakeSquare.png" width="30"> Chemtech | 🟡 **A** | Tenacity & Heal | Allows enduring residual CC and boosts Severum life steal by 5%. |
+| <img src="https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Cloud_DrakeSquare.png" width="30"> Cloud | 🔴 **B** | MS Speed (R Buff) | Lower priority on stats, but speed behind `<kbd>R</kbd>` cast sets dynamic repositions during intense kitings. |
 
 ---
 
