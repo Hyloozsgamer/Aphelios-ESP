@@ -1,67 +1,79 @@
-# 📖 MANUAL DE COMBOS MECÁNICOS (Season 2026)
-# ==========================================
+# 📖 MANUAL DE COMBOS MECÁNICOS (Coach Level: GM+)
+# ==================================================
 
-## <img src="https://static.wikia.nocookie.net/leagueoflegends/images/0/00/Aphelios_Calibrum.png/revision/latest?cb=20191213185839" width="30"> CALIBRUM + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/2/2a/Aphelios_Severum.png/revision/latest?cb=20191213190135" width="30"> SEVERUM
+<p align="center">
+  <img src="https://static.wikia.nocookie.net/leagueoflegends/images/1/1a/Aphelios_Icon.png" width="60" style="border-radius: 50%;">
+</p>
+
+---
+
+## 🟢 CALIBRUM + 🔴 SEVERUM
 ### 1. **The Life Stealer Poke**
-*   **Arma Activa**: Severum 🔴 | **Arma Secundaria**: Calibrum 🟢
+*   **Armas**: Severum 🔴 (Activa) | Calibrum 🟢 (Secundaria)
 *   **Secuencia**:
-    1.  Usa `Severum Q` para aplicar daño continuo y sustain.
-    2.  Al terminar `Severum Q`, cambia a `Calibrum` (W).
-    3.  Aprovecha el rango extendido y la marca de la Q anterior para un `Auto-Attack` a distancia.
-*   **Uso**: Tradeos en línea seguros.
+    1.  Usa `Severum Q` para daño continuo y sustain (Robo de vida).
+    2.  Justo al vaciarse el cargador o al terminar la Q, cambia a `Calibrum` (W).
+    3.  Dispara el auto de la marca a rango global.
+*   **Micro-Tip de Coach**: Puedes usar un `A-Click` en el suelo tras la Q para cancelar la animación de levantar la pistola y disparar la marca 0.2s antes.
 
 ---
 
-## <img src="https://static.wikia.nocookie.net/leagueoflegends/images/0/00/Aphelios_Calibrum.png/revision/latest?cb=20191213185839" width="30"> CALIBRUM + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/4/4b/Aphelios_Gravitum.png/revision/latest?cb=20191213190004" width="30"> GRAVITUM
-### 2. **The Long-Range Root (Sniper CC)**
-*   **Arma Activa**: Calibrum 🟢 | **Arma Secundaria**: Gravitum 🟣
+## 🟢 CALIBRUM + 🟣 GRAVITUM
+### 2. **Sniper Lock-down (Set-up de Ganks)**
+*   **Armas**: Calibrum 🟢 (Activa) | Gravitum 🟣 (Secundaria)
 *   **Secuencia**:
-    1.  Lanza `Calibrum Q` para marcar al enemigo desde muy lejos.
-    2.  Dispara el `Auto-Attack` de la marca (aplica Gravitum).
-    3.  Cambia a `Gravitum` (W) y usa `Gravitum Q` instantáneamente para inmovilizar (Root).
-*   **Uso**: Set-up para ganks o interrupciones de canalización.
+    1.  Lanza `Calibrum Q` para marcar al objetivo desde fuera de su rango de visión.
+    2.  Dispara el `Auto-Attack` de la marca (aplica pasiva de Gravitum lentitud).
+    3.  Cambia instantáneamente a `Gravitum` (W) y usa `Gravitum Q` para inmovilizar (**Root**).
+*   **Uso**: Kit de iniciación para supports deengage o ganks aliados.
 
 ---
 
-## <img src="https://static.wikia.nocookie.net/leagueoflegends/images/b/bb/Aphelios_Infernum.png/revision/latest?cb=20191213190016" width="30"> INFERNUM + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/8/84/Aphelios_Crescendum.png/revision/latest?cb=20191213185918" width="30"> CRESCENDUM
-### 3. **The Wave Clear Stack**
-*   **Arma Activa**: Infernum 🔵 | **Arma Secundaria**: Crescendum ⚪
+## 🔵 INFERNUM + ⚪ CRESCENDUM
+### 3. **The Wave Clear Stack (Infinite Chakrams)**
+*   **Armas**: Infernum 🔵 (Activa) | Crescendum ⚪ (Secundaria)
 *   **Secuencia**:
-    1.  Lanza `Infernum Q` sobre una oleada de minions grande.
-    2.  Cada minion golpeado genera un Chakram de `Crescendum`.
-    3.  Cambia a `Crescendum` (W) y tendrás un stack enorme para tradear con el rival en melé.
-*   **Uso**: Control de oleadas e invasiones agresivas.
+    1.  Espera a que la oleada enemiga se agrupe.
+    2.  Lanza `Infernum Q` golpeando la mayor cantidad de minions (genera 1 Chakram por minion).
+    3.  Cambia a `Crescendum` (W) y tendrás un stack enorme (5-8 Chakrams) listo para tradear en melé.
+*   **Consejo GM**: Si tienes `Moonlight Vigil` (R), lánzalo con `Infernum` y luego usa la Q de Infernum en minions para un stack de Chakrams que borra una teamfight.
 
 ---
 
-## 🌌 COMBOS AVANZADOS (Level: GrandMaster+)
+## 🌌 COMBOS MAESTROS (Theoretical Limit)
 
-### 4. **The 4-Weapon Sentence (Theoretical Maximum Burst)**
-*   **Escenario**: Calibrum 🟢 (10 balas) + Severum 🔴 (10 balas) + Gravitum 🟣 (Secundaria).
+### 4. **The 4-Weapon Sentence (LCK Style Burst)**
+*   **Requisito**: Calibrum 🟢 (10 balas o menos) + Severum 🔴 (10 balas o menos) + Gravitum 🟣 (En cola).
 *   **Secuencia**:
-    1.  Usa `Severum Q` (Aplica marcas de Calibrum, gasta munición).
-    2.  Cae `Gravitum` como arma secundaria.
-    3.  Activa la marca de `Calibrum` (Aplica Gravitum).
+    1.  Usa `Severum Q` (Aplica marcas de Calibrum continuas, gasta munición).
+    2.  Cae `Gravitum` como arma secundaria (Buffering swap).
+    3.  Activa la marca de `Calibrum` (Aplica la pasiva de Gravitum).
     4.  Usa `Calibrum Q` (Aplica Gravitum, gasta Calibrum).
     5.  Cae `Infernum` como arma primaria.
-    6.  Usa `Gravitum Q` (Inmoviliza).
-    7.  Termina con `Infernum R` para borrar la zona.
-*   **Uso**: Borrar una teamfight de un solo golpe. Requiere gestión perfecta de munición.
-
-### 5. **The Crescent Tower Defense (Turret Setup)**
-*   **Arma Activa**: Crescendum ⚪ | **Arma Secundaria**: Calibrum 🟢
-*   **Secuencia**:
-    1.  Coloca una torreta con `Crescendum Q` (Usa Calibrum).
-    2.  Cada vez que la torreta golpee a un enemigo, generará una marca de `Calibrum`.
-    3.  Dispara la marca desde la distancia con `Crescendum` para acumular Chakrams a rango seguro.
-*   **Uso**: Control de zonas (Dragón, Barón) y proteger asedios.
+    6.  Usa `Gravitum Q` (Inmoviliza al objetivo rooteado).
+    7.  Lanza `Infernum R` para detonar el área.
+*   **Análisis**: Este combo borra instantáneamente a la backline. Requiere una gestión de balas perfecta (contar hasta 10).
 
 ---
 
-## 💡 Consejos de Micro-Mecánica (Master+)
--   **Cancelación de Animación**: Puedes usar habilidades justo después de un auto-ataque para maximizar el DPS.
--   **Transición de Armas (Weapon Swap)**: Cambiar de arma (W) no tiene cooldown, pero la animación sí. Planifica el cambio medio segundo antes de necesitar la habilidad secundaria.
--   **Sinergias de Alune**: El Oráculo de Alune te avisa cuál es tu siguiente arma. Mira el icono pequeño para predecir tu próximo combo.
+## 🧠 5. Cancelación de Animaciones y Buffering (Micro GM)
+
+### 🖱️ 5.1. El "Weapon Reload" Cancel
+Cuando un arma se gasta, Aphelios entra en una animación de reload de 0.5s donde no puede atacar.
+*   **Cancel**: Justo en el frame donde el arma se gasta, usa `W` (Weapon Swap) o lanza una `Habilidad (Q)` si tienes munición en la otra. Esto **interrumpe el retraso** y te permite seguir DPS-seando.
+
+### 🖱️ 5.2. Input Buffering en Auto Spacing
+Si vas a usar `Calibrum Q`, mantén el puntero en el enemigo y presiona `Q`. Aphelios caminará hasta el rango exacto y disparará en el frame 1. 
 
 ---
-<p align="center"><i>"Faith. That is what you need." - Alune</i></p>
+
+## 📊 Estrategia Visual de Combate
+
+-   🔴 **Severum**: Curación. Úsalo para aguantar Poke o curarte tras trades.
+-   🟢 **Calibrum**: Rango. Úsalo para castigar el Last Hit enemigo.
+-   🟣 **Gravitum**: Control. Guarda la Q para responder a ganks o dives.
+-   🔵 **Infernum**: AOE. Excelente para empujar oleada en 3s.
+-   ⚪ **Crescendum**: DPS Cercano. No uses esto si el enemigo está a rango máximo; camina hacia él.
+
+---
+<p align="center"><i>"The path is set where the shadows fall." - Alune</i></p>
