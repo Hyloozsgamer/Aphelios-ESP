@@ -1,0 +1,56 @@
+{
+  "matchups": [
+    {
+      "champion": "Zeri",
+      "tier": "B",
+      "threat_level": "Medium",
+      "support_synergy": ["Milio", "Lulu", "Yuumi"],
+      "win_rate": 51.5,
+      "micro_strategy": "Castigar early con Calibrum range advantage. Gravitum para detener su R/E en teamfights.",
+      "counters": {
+        "early": "Abusar de rango con Calibrum",
+        "mid": "Infernum R en agrupaciones",
+        "late": "Crescendum duel si se acerca"
+      }
+    },
+    {
+      "champion": "Jinx",
+      "tier": "S",
+      "threat_level": "High",
+      "support_synergy": ["Thresh", "Nautilus", "Blitzcrank"],
+      "win_rate": 48.2,
+      "micro_strategy": "Escala igual de bien. Infernum R en teamfights gana la pelea sola si se agrupan.",
+      "counters": {
+        "early": "Trade corto con Severum Q",
+        "mid": "Crescendum stack si intenta dive",
+        "late": "Evitar cohetes con posicionamiento"
+      }
+    },
+    {
+      "champion": "Draven",
+      "tier": "S+",
+      "threat_level": "Extreme",
+      "support_synergy": ["Pyke", "Leona", "Nautilus"],
+      "win_rate": 45.0,
+      "micro_strategy": "PELIGRO MÁXIMO. Sobrevivir con Severum para sustain. No tradear antes de nivel 6.",
+      "counters": {
+        "early": "Farm seguro bajo torre, no morir",
+        "mid": "Gravitum gank set-up",
+        "late": "Out-scale en teamfight si no se fedearon"
+      }
+    },
+    {
+      "champion": "Ezreal",
+      "tier": "C",
+      "threat_level": "Low",
+      "support_synergy": ["Karma", "Bard", "Lux"],
+      "win_rate": 53.8,
+      "micro_strategy": "Línea tranquila. Stackear Crescendum detrás de minions y obligar a dive.",
+      "counters": {
+        "early": "Empujar oleada para forzar Qs en minions",
+        "mid": "Gravitum para anular su E",
+        "late": "DPS superior en melé"
+      }
+    }
+  ]
+}

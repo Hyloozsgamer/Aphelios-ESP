@@ -1,0 +1,49 @@
+# APHELIOS BUILD SYSTEM YML (Season 2026)
+# ==========================================
+
+build_paths:
+  dps_sustained:
+    description: "Maximiza el DPS en peleas largas contra tanques."
+    core:
+      - item: "Kraken Slayer"
+        priority: 1
+        notes: "Sinergia brutal con Severum Q."
+      - item: "Infinity Edge"
+        priority: 2
+        notes: "Multiplicador de crítico obligatorio."
+      - item: "Lord Dominik's Regards"
+        priority: 3
+        notes: "Contra tanques y escalados de armadura."
+    situational:
+      - item: "Bloodthirster"
+        notes: "Si necesitas sustain extremo."
+      - item: "Guardian Angel"
+        notes: "Contra asesinos de burst alto."
+
+  burst_assassination:
+    description: "Para borrar objetivos blandos con Calibrum/Infernum R."
+    core:
+      - item: "The Collector"
+        priority: 1
+        notes: "Lethality para snowball temprano."
+      - item: "Black Cleaver"
+        priority: 2
+        notes: "Stack de armor pen con Infernum R."
+      - item: "Yun Tal Wildarrows"
+        priority: 3
+        notes: "Daño de sangrado por crítico."
+    situational:
+      - item: "Maw of Malmortius"
+        notes: "Si el AP enemigo está fed."
+      - item: "Wit's End"
+        notes: "Para velocidad de ataque y resistencia mágica."
+
+runes:
+  main_tree: "Precision"
+  key_stone: "Lethal Tempo"
+  notes: "Lethal Tempo reduce el tiempo de retorno de los proyectiles de Crescendum, lo que permite un DPS exponencial en corto rango."
+  sub_tree: "Domination"
+  shards:
+    - "Attack Speed"
+    - "Adaptive Force"
+    - "Health Scaling"
