@@ -76,6 +76,17 @@ graph TD
     end
 ```
 
+### ⚔️ Arsenal de Piedra Lunar (Visual Database)
+
+| Arma | Icono | Tipo | Descripción Táctica |
+| :--- | :---: | :--- | :--- |
+| **Calibrum** | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/0/00/Aphelios_Calibrum.png/revision/latest?cb=20191213185839" width="40"> | Rifle | Rango extendido. Marca objetivos para ataques a distancia global. |
+| **Severum** | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/2/2a/Aphelios_Severum.png/revision/latest?cb=20191213190135" width="40"> | Pistola | Robo de vida (Sustain). Otorga velocidad de movimiento y ráfagas de tiros. |
+| **Gravitum** | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/4/4b/Aphelios_Gravitum.png/revision/latest?cb=20191213190004" width="40"> | Cañón | Ralentiza y permite inmovilizar (CC) a los objetivos con Gravitum Q. |
+| **Infernum** | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/b/bb/Aphelios_Infernum.png/revision/latest?cb=20191213190016" width="40"> | Lanzallamas | Daño en área (AOE). Perfecto para control de oleadas y peleas grupales. |
+| **Crescendum** | <img src="https://static.wikia.nocookie.net/leagueoflegends/images/8/84/Aphelios_Crescendum.png/revision/latest?cb=20191213185918" width="40"> | Chakram | Daño masivo a corta distancia. Escala exponencialmente con *Chakrams*. |
+
+
 ---
 
 ## 📊 2. Matriz de Matchups (Master+ Global)

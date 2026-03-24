@@ -1,7 +1,7 @@
 # 📖 MANUAL DE COMBOS MECÁNICOS (Season 2026)
 # ==========================================
 
-## 🟢 CALIBRUM + 🔴 SEVERUM
+## <img src="https://static.wikia.nocookie.net/leagueoflegends/images/0/00/Aphelios_Calibrum.png/revision/latest?cb=20191213185839" width="30"> CALIBRUM + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/2/2a/Aphelios_Severum.png/revision/latest?cb=20191213190135" width="30"> SEVERUM
 ### 1. **The Life Stealer Poke**
 *   **Arma Activa**: Severum 🔴 | **Arma Secundaria**: Calibrum 🟢
 *   **Secuencia**:
@@ -12,7 +12,7 @@
 
 ---
 
-## 🟢 CALIBRUM + 🟣 GRAVITUM
+## <img src="https://static.wikia.nocookie.net/leagueoflegends/images/0/00/Aphelios_Calibrum.png/revision/latest?cb=20191213185839" width="30"> CALIBRUM + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/4/4b/Aphelios_Gravitum.png/revision/latest?cb=20191213190004" width="30"> GRAVITUM
 ### 2. **The Long-Range Root (Sniper CC)**
 *   **Arma Activa**: Calibrum 🟢 | **Arma Secundaria**: Gravitum 🟣
 *   **Secuencia**:
@@ -23,7 +23,7 @@
 
 ---
 
-## 🔵 INFERNUM + ⚪ CRESCENDUM
+## <img src="https://static.wikia.nocookie.net/leagueoflegends/images/b/bb/Aphelios_Infernum.png/revision/latest?cb=20191213190016" width="30"> INFERNUM + <img src="https://static.wikia.nocookie.net/leagueoflegends/images/8/84/Aphelios_Crescendum.png/revision/latest?cb=20191213185918" width="30"> CRESCENDUM
 ### 3. **The Wave Clear Stack**
 *   **Arma Activa**: Infernum 🔵 | **Arma Secundaria**: Crescendum ⚪
 *   **Secuencia**:
