@@ -1,4 +1,4 @@
-# 📖 MANUAL DE COMBOS MECÁNICOS (Coach Level: GM+)
+# 📖 MECHANICAL COMBOS MANUAL (Coach Level: GM+)
 # ==================================================
 
 <p align="center">
@@ -7,15 +7,15 @@
 
 ---
 
-## 🌀 1. Combos de Transición (Early & Poke)
+## 🌀 1. Transition Combos (Early & Poke)
 
 ### 🔴 SEVERUM + 🟢 CALIBRUM: "The Life Stealer Poke"
 <div align="center">
   <table border="0">
     <tr>
-      <th>Armas Swap</th>
-      <th>Secuencia de Input</th>
-      <th>Directriz de Ejecución</th>
+      <th>Weapon Swap</th>
+      <th>Input Sequence</th>
+      <th>Execution Guideline</th>
     </tr>
     <tr>
       <td align="center">
@@ -25,7 +25,7 @@
       <td>
         <kbd>Q</kbd> ➡️ <kbd>W</kbd> ➡️ <kbd>A-Click</kbd>
       </td>
-      <td>Usa <code>Severum Q</code> para dps y sustain. En el último golpe de la Q, el proyectil residual aplicará el hit. Cambia a Calibrum y dispara la marca a rango global.</td>
+      <td>Use <code>Severum Q</code> for DPS and sustain. On the last shot of Q, the residual projectile applies the hit. Swap to Calibrum and fire the mark at global range.</td>
     </tr>
   </table>
 </div>
@@ -36,9 +36,9 @@
 <div align="center">
   <table border="0">
     <tr>
-      <th>Armas Swap</th>
-      <th>Secuencia de Input</th>
-      <th>Directriz de Ejecución</th>
+      <th>Weapon Swap</th>
+      <th>Input Sequence</th>
+      <th>Execution Guideline</th>
     </tr>
     <tr>
       <td align="center">
@@ -48,22 +48,22 @@
       <td>
         <kbd>Q</kbd> ➡️ <kbd>Click</kbd> ➡️ <kbd>W</kbd> ➡️ <kbd>Q</kbd>
       </td>
-      <td>Lanza <code>Calibrum Q</code> desde fuera de visión. Dispara la marca (aplica slow), cambia a Gravitum para <code>Q (Root)</code>. Setup de gank o iniciación definitivo.</td>
+      <td>Fire <code>Calibrum Q</code> from foggy vision. Shoot the mark (applies slow), swap to Gravitum for <code>Q (Root)</code>. Ultimate gank or engage setup.</td>
     </tr>
   </table>
 </div>
 
 ---
 
-## ⚔️ 2. Combos de Ráfaga y Teamfight (Mid-Game)
+## ⚔️ 2. Burst and Teamfight Combos (Mid-Game)
 
 ### 🔵 INFERNUM + ⚪ CRESCENDUM: "The Infinite Chakrams"
 <div align="center">
   <table border="0">
     <tr>
-      <th>Armas Swap</th>
-      <th>Secuencia de Input</th>
-      <th>Directriz de Ejecución</th>
+      <th>Weapon Swap</th>
+      <th>Input Sequence</th>
+      <th>Execution Guideline</th>
     </tr>
     <tr>
       <td align="center">
@@ -71,58 +71,58 @@
         <img src="https://static.wikia.nocookie.net/leagueoflegends/images/8/84/Aphelios_Crescendum.png" width="30">
       </td>
       <td>
-        <kbd>Q</kbd> ➡️ <kbd>W</kbd> ➡️ <kbd>Click</kbd> (Avanzar)
+        <kbd>Q</kbd> ➡️ <kbd>W</kbd> ➡️ <kbd>Click</kbd> (Advance)
       </td>
-      <td>Lanza <code>Infernum Q</code> golpeando a múltiples minions/rivales. Cambia a Crescendum con un stack enorme de cuchillas listo para tradear en melé.</td>
+      <td>Fire <code>Infernum Q</code> hitting multiple minions/rivals. Swap to Crescendum with a massive blade stack ready to trade in melee.</td>
     </tr>
   </table>
 </div>
 
 ---
 
-## 🌌 3. Combos Maestros (Teoría de LCK)
+## 🌌 3. Masterclass Combos (LCK Theory)
 
 ### 🧠 The 4-Weapon Sentence (LCK Burst Buffer)
-*   **Requisito**: Calibrum 🟢 (<10 balas) + Severum 🔴 (<10 balas) + Gravitum 🟣 en cola.
+*   **Requirement**: Calibrum 🟢 (<10 ammo) + Severum 🔴 (<10 ammo) + Gravitum 🟣 in queue.
 
 <div align="center">
   <table border="0">
     <tr>
-      <th>Fase de Entrada</th>
+      <th>Entrance Phase</th>
       <th>Input Combo</th>
-      <th>Efecto de Combate</th>
+      <th>Combat Effect</th>
     </tr>
     <tr>
-      <td><b>Paso 1:</b></td>
+      <td><b>Step 1:</b></td>
       <td><kbd>Auto</kbd> 🔴 ➡️ <kbd>Q</kbd> 🔴</td>
-      <td>Aplica marcas Calibrum y gasta Severum. Cae Gravitum.</td>
+      <td>Applies Calibrum marks and spends Severum. Gravitum falls.</td>
     </tr>
     <tr>
-      <td><b>Paso 2:</b></td>
-      <td><kbd>W</kbd> 🟢 ➡️ <kbd>Click Marca</kbd> 🟣</td>
-      <td>Activa marcas para aplicar lentitud de Gravitum a rango global.</td>
+      <td><b>Step 2:</b></td>
+      <td><kbd>W</kbd> 🟢 ➡️ <kbd>Click Mark</kbd> 🟣</td>
+      <td>Activate marks to apply Gravitum slow at global range.</td>
     </tr>
     <tr>
-      <td><b>Paso 3:</b></td>
+      <td><b>Step 3:</b></td>
       <td><kbd>Q</kbd> 🟢 ➡️ <kbd>W</kbd> 🟣 ➡️ <kbd>Q</kbd> 🟣</td>
-      <td>Gasta Calibrum, aplica marca Gravitum. Cae Infernum. Root al objetivo.</td>
+      <td>Spends Calibrum, applies Gravitum mark. Infernum falls. Root on target.</td>
     </tr>
     <tr>
       <td><b>Final:</b></td>
       <td><kbd>R</kbd> 🔵</td>
-      <td>Lanza Ultimate de Infernum para detonar el área del objetivo rooteado.</td>
+      <td>Fire Infernum Ultimate to detonate the area of the rooted target.</td>
     </tr>
   </table>
 </div>
 
 ---
 
-## 🧠 4. Cancelación de Animaciones (Micro GM)
+## 🧠 4. Animation Cancels (Micro GM)
 
-### 🖱️ El "Weapon Reload" Cancel
-Cuando un arma se gasta, Aphelios se queda quieto 0.5s.
-- **Cancel**: Justo en el frame donde el arma se gasta y aparece la animación de Alune, presiona **<kbd>W</kbd>** (Weapon Swap) o lanza una **<kbd>Q</kbd>**. 
-- **Efecto**: Eliminas la parada en seco y sigues haciendo DPS sin perder frames de auto-ataque.
+### 🖱️ The "Weapon Reload" Cancel
+When a weapon empties, Aphelios freezes for 0.5s.
+- **Cancel**: Exactly at the frame where the weapon depletes and Alune animation triggers, press **<kbd>W</kbd>** (Weapon Swap) or fire a **<kbd>Q</kbd>**.
+- **Effect**: Eliminates the freeze locking and keeps dealing DPS without losing auto-attack frames.
 
 ---
 

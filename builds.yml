@@ -3,58 +3,58 @@
 
 build_paths:
   dps_sustained:
-    description: "Maximiza el DPS en peleas largas contra tanques o composiciones de dive lento."
+    description: "Maximizes DPS in long fights against tanks or slow dive compositions."
     core:
       - item: "Kraken Slayer"
         priority: 1
-        notes: "Sinergia brutal con Severum Q y auto-attacks rápidos."
+        notes: "Brutal synergy with Severum Q and fast auto-attacks."
       - item: "Infinity Edge"
         priority: 2
-        notes: "Multiplicador de crítico obligatorio. Escalado late game."
+        notes: "Mandatory critical multiplier. Scales late game."
       - item: "Lord Dominik's Regards"
         priority: 3
-        notes: "Contra tanques y escalados de armadura altos."
+        notes: "Against tanks and high armor scalings."
     situational:
       - item: "Bloodthirster"
-        notes: "Si necesitas sustain extremo contra composiciones de Poke."
+        notes: "If you need extreme sustain against Poke compositions."
       - item: "Guardian Angel"
-        notes: "Contra asesinos de burst alto (Zed, Talon)."
+        notes: "Against high burst assassins (Zed, Talon)."
 
   burst_assassination:
-    description: "Para borrar objetivos blandos con Calibrum y combinaciones de Infernum R."
+    description: "To erase soft targets with Calibrum and Infernum R combinations."
     core:
       - item: "The Collector"
         priority: 1
-        notes: "Lethality para castigar el early/mid game y asegurar kills."
+        notes: "Lethality to punish early/mid game and secure kills."
       - item: "Essence Reaver"
         priority: 2
-        notes: "Spellblade para spamear habilidades y daño de burst."
+        notes: "Spellblade for spamming abilities and burst damage."
       - item: "Yun Tal Wildarrows"
         priority: 3
-        notes: "Daño de sangrado por crítico."
+        notes: "Bleed damage from critical strikes."
     situational:
       - item: "Maw of Malmortius"
-        notes: "Si el AP enemigo tiene mucho burst (LeBlanc, Syndra)."
+        notes: "If enemy AP has high burst (LeBlanc, Syndra)."
       - item: "Edge of Night"
-        notes: "Spell shield para evitar iniciaciones clave."
+        notes: "Spell shield to prevent key initiations."
 
   hyper_carry_critical:
-    description: "El build clásico de 100% crítico para destruir en el minuto 30."
+    description: "The classic 100% crit build to destroy at minute 30."
     core:
       - item: "Statikk Shiv"
         priority: 1
-        notes: "Clear wave y daño mágico en área."
+        notes: "Wave clear and magical AOE damage."
       - item: "Infinity Edge"
         priority: 2
-        notes: "Núcleo de daño."
+        notes: "Damage Core."
       - item: "Phantom Dancer"
         priority: 3
-        notes: "Velocidad de movimiento y Attack Speed extremo para Crescendum."
+        notes: "Movement speed and extreme Attack Speed for Crescendum."
 
 runes:
   main_tree: "Precision"
   key_stone: "Lethal Tempo"
-  notes: "Lethal Tempo reduce el tiempo de retorno de los proyectiles de Crescendum, lo que permite un DPS exponencial en corto rango."
+  notes: "Lethal Tempo reduces the return time of Crescendum projectiles, allowing exponential close-range DPS."
   minor_runes:
     - "Presence of Mind"
     - "Legend: Bloodline"
@@ -67,4 +67,4 @@ runes:
 skill_order:
   max_sequence: ["Q", "W", "E"]
   stat_priority: ["Attack Damage", "Attack Speed", "Lethality"]
-  notes: "Maximizar AD primero para escalado de habilidades, luego AS para multiplicar el DPS."
+  notes: "Max AD first for ability scaling, then AS to multiply DPS."
