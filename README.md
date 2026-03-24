@@ -168,8 +168,8 @@ Un carry de Aphelios debe dominar el margen de golpeo para no recibir daño:
 
 ## 💡 5. Protocolos de Combate (GM Analyst Notes)
 
-> [!CAUTION]
-> **Error de Munición**: Nunca entres a pelear un dragón con 2 balas en tu arma. Si el arma se gasta en medio del combate, el Delay de la animación de Alune dándote otra es de 0.5s donde no puedes auto-atacar. Te matarán.
+> [!IMPORTANT]
+> **Low Ammo Setup (El Poder de <10 Balas)**: En Master+, tener poca munición es una **herramienta de Burst**. Llegar a un objetivo con 10 balas te permite usar una habilidad (`Q`), gastar el cargador y ciclar instantáneamente a la siguiente arma para encadenar combos de 3 o 4 armas en cascada (ej. `Severum Q` -> Ciclado automático -> `Gravitum Q`).
 
 > [!IMPORTANT]
 > **Gestión de Weapon Order Antes de Objetivos**: 
