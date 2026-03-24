@@ -39,12 +39,24 @@ graph TD
     classDef blue fill:#2196f3,stroke:#333,stroke-width:1px,color:#fff;
     classDef white fill:#ffffff,stroke:#333,stroke-width:1px,color:#000;
 
-    Severum["🔴 SEVERUM (Pistola)"] ::: red --> Calibrum;
-    Calibrum["🟢 CALIBRUM (Rifle)"] ::: green --> Gravitum;
-    Gravitum["🟣 GRAVITUM (Cañón)"] ::: purple --> Infernum;
-    Infernum["🔵 INFERNUM (Lanzallamas)"] ::: blue --> Severum;
+    Severum["🔴 SEVERUM (Pistola)"]
+    Calibrum["🟢 CALIBRUM (Rifle)"]
+    Gravitum["🟣 GRAVITUM (Cañón)"]
+    Infernum["🔵 INFERNUM (Lanzallamas)"]
+    Crescendum["⚪ CRESCENDUM (Chakram)"]
+
+    class Severum red;
+    class Calibrum green;
+    class Gravitum purple;
+    class Infernum blue;
+    class Crescendum white;
+
+    Severum --> Calibrum;
+    Calibrum --> Gravitum;
+    Gravitum --> Infernum;
+    Infernum --> Severum;
     Infernum --> Crescendum;
-    Crescendum["⚪ CRESCENDUM (Chakram)"] ::: white --> Severum;
+    Crescendum --> Severum;
 
     subgraph Combos_Core
         style Combos_Core fill:#1a1a1a,stroke:#444,color:#fff
