@@ -1,0 +1,73 @@
+/* Additional CSS Animations */
+
+/* Simple idle breathing animation for sprites if they are standing still */
+@keyframes breathe {
+    0%, 100% { transform: scale(1) translateY(0); }
+    50% { transform: scale(1.02) translateY(-2px); }
+}
+
+.sprite-image.idle {
+    animation: breathe 2s ease-in-out infinite;
+}
+
+/* Sprite walking animation (bobbing) */
+@keyframes walk {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px) rotate(2deg); }
+}
+
+.sprite-image.walking {
+    animation: walk 0.4s ease-in-out infinite;
+}
+
+/* Flip sprite when changing direction */
+.sprite-image.flip {
+    transform: scaleX(-1);
+}
+.sprite-image.walking.flip {
+    animation: walk-flip 0.4s ease-in-out infinite;
+}
+
+@keyframes walk-flip {
+    0%, 100% { transform: scaleX(-1) translateY(0); }
+    50% { transform: scaleX(-1) translateY(-5px) rotate(-2deg); }
+}
+
+/* Celebrate jump */
+@keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
+.sprite-image.celebrating {
+    animation: jump 0.5s ease-in-out 3;
+}
+.sprite-image.celebrating.flip {
+    animation: jump-flip 0.5s ease-in-out 3;
+}
+@keyframes jump-flip {
+    0%, 100% { transform: scaleX(-1) translateY(0); }
+    50% { transform: scaleX(-1) translateY(-30px); }
+}
+
+/* Automatic Background Parallax panning */
+@keyframes autoPanDeep {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-1.5%, -1%); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes autoPanMid {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-3%, -2%); }
+    100% { transform: translate(0, 0); }
+}
+
+.layer-deep {
+    animation: autoPanDeep 30s ease-in-out infinite;
+}
+
+.layer-mid {
+    animation: autoPanMid 20s ease-in-out infinite;
+    mix-blend-mode: screen;
+    opacity: 0.8;
+}

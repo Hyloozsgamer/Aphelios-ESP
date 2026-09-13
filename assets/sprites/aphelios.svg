@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <circle cx="50" cy="40" r="25" fill="#1a2b4c"/> <!-- Head -->
+    <path d="M 20 90 L 40 40 L 60 40 L 80 90 Z" fill="#1a2b4c"/> <!-- Body -->
+    <circle cx="50" cy="40" r="10" fill="#a4c2f4"/> <!-- Face -->
+    <path d="M 40 20 C 50 10, 60 10, 70 20 C 60 25, 50 25, 40 20 Z" fill="#20124d"/> <!-- Hair -->
+    <!-- Moon Blade (Crescendum) -->
+    <path d="M 70 60 A 20 20 0 1 0 90 80 A 15 15 0 1 1 70 60" fill="#00e5ff" filter="drop-shadow(0 0 5px #00e5ff)"/>
+</svg>
