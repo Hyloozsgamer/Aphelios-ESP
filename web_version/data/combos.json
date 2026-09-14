@@ -1,0 +1,23 @@
+[
+    {
+        "level": "Básico",
+        "weapons": "Calibrum + Severum",
+        "sequence": "Calibrum Auto -> Severum Q -> Calibrum Q -> Auto",
+        "difficulty": "Baja",
+        "usage": "Poke e intercambio corto en fase de líneas."
+    },
+    {
+        "level": "Intermedio",
+        "weapons": "Infernum + Crescendum",
+        "sequence": "Infernum Q (a los minions) -> Cambia a Crescendum -> Autoataques cuerpo a cuerpo",
+        "difficulty": "Media",
+        "usage": "Máximo DPS rápido. Al usar la Q de Infernum en una gran oleada, generas un Chakram por cada minion golpeado. Si golpeas a 6 minions, consigues 6 chakrams instantáneos para reventar al campeón enemigo."
+    },
+    {
+        "level": "Avanzado (3-Weapon Combo)",
+        "weapons": "Severum (10 balas) + Crescendum + Calibrum",
+        "sequence": "Severum Q (Gasta la munición) -> Genera Chakrams -> Cambia automáticamente a Calibrum -> Calibrum Q -> Autoataque (con extra chakrams) -> Crescendum Torreta -> Autoataques.",
+        "difficulty": "Alta",
+        "usage": "El combo definitivo de transición de armas. Sorprende al enemigo porque no espera el daño brutal de Crescendum a larga distancia gracias a las marcas de Calibrum tras consumir Severum."
+    }
+]

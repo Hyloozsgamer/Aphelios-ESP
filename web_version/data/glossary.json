@@ -1,0 +1,22 @@
+[
+    {
+        "term": "Weapon Queue",
+        "definition": "La cola de armas. El orden interno en el que están almacenadas las 3 armas que no estás usando actualmente."
+    },
+    {
+        "term": "Tethering",
+        "definition": "Mantenerse exactamente en el borde del rango de ataque máximo (ej: 650 con Calibrum), entrando y saliendo al ritmo del movimiento enemigo."
+    },
+    {
+        "term": "Threat Zone",
+        "definition": "La zona de amenaza. El rango combinado de las habilidades de iniciación del enemigo más su Flash (Ej: Flash + W de Leona)."
+    },
+    {
+        "term": "3-Weapon Combo",
+        "definition": "Usar la Q de tu arma principal cuando le quedan menos de 10 balas, cambiando instantáneamente a una tercera arma para encadenar habilidades imposibles con solo 2."
+    },
+    {
+        "term": "Chakram Stacking",
+        "definition": "Acumular minichakrams fantasmas usando habilidades secundarias antes de atacar cuerpo a cuerpo con Crescendum."
+    }
+]

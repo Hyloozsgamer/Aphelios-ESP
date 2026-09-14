@@ -116,4 +116,84 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     renderSimulator();
+
+    // --- Dynamic Data Fetching (Architecture 100%) ---
+    async function fetchAndRenderData() {
+        try {
+            // Fetch Builds
+            const buildsRes = await fetch('data/builds.json');
+            const builds = await buildsRes.json();
+            const buildsContainer = document.getElementById('dynamic-builds');
+            if (buildsContainer) {
+                let html = '';
+                builds.forEach(b => {
+                    html += `
+                    <div class="matchup-card glass-section">
+                        <h3 class="text-glow">${b.name}</h3>
+                        <p><strong>Core:</strong> ${b.core.join(' &rarr; ')}</p>
+                        <p><strong>Cuándo usarla:</strong> ${b.whenToUse}</p>
+                        <p><em>Por qué:</em> ${b.why}</p>
+                    </div>`;
+                });
+                buildsContainer.innerHTML = html;
+            }
+
+            // Fetch Combos
+            const combosRes = await fetch('data/combos.json');
+            const combos = await combosRes.json();
+            const combosContainer = document.getElementById('dynamic-combos');
+            if (combosContainer) {
+                let html = '';
+                combos.forEach(c => {
+                    html += `
+                    <div class="matchup-card glass-section">
+                        <h3 class="text-glow">${c.level} - ${c.weapons}</h3>
+                        <p><strong>Secuencia:</strong> ${c.sequence}</p>
+                        <p><strong>Dificultad:</strong> ${c.difficulty}</p>
+                        <p><em>Uso:</em> ${c.usage}</p>
+                    </div>`;
+                });
+                combosContainer.innerHTML = html;
+            }
+
+            // Fetch Supports
+            const supRes = await fetch('data/supports.json');
+            const supports = await supRes.json();
+            const supContainer = document.getElementById('dynamic-supports');
+            if (supContainer) {
+                let html = '';
+                supports.forEach(s => {
+                    html += `
+                    <div class="matchup-card glass-section">
+                        <h3 class="text-glow">${s.name} (Tier ${s.tier})</h3>
+                        <p><strong>Sinergia:</strong> ${s.synergy}</p>
+                        <p><strong>Plan de Línea:</strong> ${s.lanePlan}</p>
+                        <p><strong>Combo Ideal:</strong> ${s.combo}</p>
+                    </div>`;
+                });
+                supContainer.innerHTML = html;
+            }
+
+            // Fetch Glossary
+            const gloRes = await fetch('data/glossary.json');
+            const glossary = await gloRes.json();
+            const gloContainer = document.getElementById('dynamic-glossary');
+            if (gloContainer) {
+                let html = '';
+                glossary.forEach(g => {
+                    html += `
+                    <div class="matchup-card glass-section">
+                        <h3 class="text-glow">${g.term}</h3>
+                        <p>${g.definition}</p>
+                    </div>`;
+                });
+                gloContainer.innerHTML = html;
+            }
+
+        } catch (error) {
+            console.error("Error loading JSON data:", error);
+        }
+    }
+    
+    fetchAndRenderData();
 });

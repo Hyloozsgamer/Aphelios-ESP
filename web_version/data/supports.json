@@ -1,0 +1,34 @@
+[
+    {
+        "id": "thresh",
+        "name": "Thresh",
+        "tier": "S",
+        "synergy": "Excelente (S Tier)",
+        "lanePlan": "Thresh ofrece todo lo que Aphelios necesita: Peel, Engage y la Linterna para escapar. Juega agresivo si él acierta la Q, pero prioriza el farmeo seguro hasta tener daño.",
+        "combo": "Thresh Q -> Aphelios Gravitum Q -> Thresh E -> Aphelios Calibrum Q."
+    },
+    {
+        "id": "lulu",
+        "name": "Lulu",
+        "tier": "S",
+        "synergy": "Excelente (S Tier)",
+        "lanePlan": "Composición de hypercarry. Aphelios con Crescendum + Severum bajo los bufos de Lulu (W, E, R) es prácticamente inmortal en 2v2 y teamfights.",
+        "combo": "Lulu W (Velocidad) -> Aphelios entra con Severum Q -> Lulu R si es necesario sobrevivir el burst."
+    },
+    {
+        "id": "nautilus",
+        "name": "Nautilus",
+        "tier": "A",
+        "synergy": "Fuerte (A Tier)",
+        "lanePlan": "Nautilus aporta mucho CC. Ideal para combear con Gravitum e Infernum para daño en área garantizado.",
+        "combo": "Nautilus R -> Nautilus Q -> Aphelios Infernum R -> Infernum Q."
+    },
+    {
+        "id": "yuumi",
+        "name": "Yuumi",
+        "tier": "B",
+        "synergy": "Débil temprano, Inmortal tarde (B Tier)",
+        "lanePlan": "Fase de líneas extremadamente débil y vulnerable a dives. Juega solo a farmear bajo torre y absorber experiencia.",
+        "combo": "Ninguno en early. En late game, Yuumi sobre Aphelios con Crescendum + Severum 1v5."
+    }
+]

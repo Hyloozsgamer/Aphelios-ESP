@@ -1,57 +1,59 @@
-# 🌙 Aphelios ESP — La Guía Definitiva
+<div align="center">
+  <img src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/523/523000.jpg" alt="Aphelios Banner" width="800" style="border-radius: 10px;">
+  
+  # 🌙 La Guía Definitiva de Aphelios
+  
+  **El Arma de los Fieles | Guía Nivel Challenger (Parche 16.18)**
+  
+  [![Win Rate](https://img.shields.io/badge/Win_Rate-49.8%25-blue?style=for-the-badge)](https://lolalytics.com/)
+  [![Tier](https://img.shields.io/badge/Tier-S--_En_Buenas_Manos-purple?style=for-the-badge)](https://lolalytics.com/)
+  [![Dificultad](https://img.shields.io/badge/Dificultad-Extrema-red?style=for-the-badge)](https://lolalytics.com/)
+</div>
 
-> *Desde los fundamentos hasta las decisiones de un jugador profesional (Challenger / Pro Play).*
+<br>
 
-Bienvenido a la **Guía Definitiva de Aphelios en español**, una referencia técnica y visual interactiva diseñada para dominar al Arma de los Fieles. Esta guía está orientada tanto a jugadores principiantes como a profesionales.
-
----
-
-## ☄️ Estado Actual
-- **Parche:** `16.18.1`
-- **Fuente de Datos:** LoLalytics (Emerald+)
-- **Actualización:** Automática / Semi-automática a través de API y archivos JSON.
-
----
-
-## ✨ Características de la Guía
-
-1. **Simulador Interactivo de Rotaciones:** Un simulador JavaScript nativo que te permite entender matemáticamente la gestión de munición, planificar tu "Weapon Queue" y arreglar rotaciones rotas en tiempo real.
-2. **Matchups Estructurados:** Base de datos separada (arquitectura JSON en `/data/`) que proporciona un plan de juego y condiciones de victoria para cada ADC en el meta actual.
-3. **Secciones de Macro / Micro:** Explicaciones visuales del *Spacing*, *Tethering*, y diagramas interactivos sobre el posicionamiento óptimo en Teamfights según tus armas actuales.
-4. **Diseño Premium Targon:** Estética construida 100% en Vanilla CSS con estilo *Glassmorphism*, Dark Mode por defecto, y tipografías inmersivas.
-5. **Data Separation:** Toda la información estadística y estratégica reside en la carpeta `/data/` (ej. `meta.json`, `matchups.json`) para actualizar la guía fácilmente en cada parche sin romper los componentes web.
+Bienvenido a la guía enciclopédica de **Aphelios en español**, estructurada profesionalmente para ser leída de forma nativa en GitHub. Si estás cansado de las guías genéricas que solo te dicen qué comprar sin explicarte el *por qué*, has llegado al lugar correcto.
 
 ---
 
-## 🚀 Arquitectura Técnica
+## 📖 Índice del Códice Lunar
 
-Este proyecto está construido para ser rápido, escalable y alojado estáticamente en **GitHub Pages**.
+Esta guía está dividida en módulos de aprendizaje progresivo. Haz clic en las secciones para acceder a la base de datos completa:
 
-- **HTML5 Semántico:** Estructura orientada al SEO y la accesibilidad.
-- **Vanilla CSS:** Sin frameworks pesados. Animaciones optimizadas.
-- **Vanilla JS:** Lógica interactiva nativa (Simulador, Tooltips, Lectura de JSON).
+### 🔫 1. El Arsenal
+> Todo lo que necesitas saber sobre sus armas, mecánicas ocultas y la "Cola de Armas".
+- [**Ver: Maestría de Armas y Combos**](./docs/armas.md)
 
-### Estructura de Directorios:
-```text
-/
-├── assets/          # Imágenes y recursos visuales permitidos (Data Dragon)
-├── css/             # Diseño Targon y sistema de Grid
-├── js/              # Lógica del simulador interactivo
-├── data/            # Bases de datos JSON (Matchups, Meta, Builds)
-├── overlay/         # [LEGACY] El overlay de Twitch original de EspetosMaker V4
-├── index.html       # La aplicación principal (Single Page Application estructurada)
-└── README.md
-```
+### ⚔️ 2. Matchups y Sinergias
+> Base de datos de enfrentamientos contra todos los ADC del meta y la Tierlist de Supports aliados.
+- [**Ver: Guía de Matchups**](./docs/matchups.md)
 
----
+### 🛡️ 3. Builds y Runas
+> Decisiones de adaptación de objetos (Anti-Tanque, Anti-Burst, Crítico Puro) y optimización matemática.
+- [**Ver: Rutas de Construcción**](./docs/builds.md)
 
-## ⚙️ Desarrollo Local
-
-1. Clona el repositorio: `git clone https://github.com/Hyloozsgamer/Aphelios-ESP.git`
-2. Puesto que es HTML/JS puro, no necesitas instalar NodeJS ni dependencias.
-3. Puedes utilizar la extensión **Live Server** de VSCode, o simplemente abrir `index.html` en tu navegador para ver la guía, aunque algunas lecturas de archivos JSON locales (`/data/`) podrían requerir un servidor HTTP ligero (ej: `python -m http.server`).
+### 🧠 4. Macro, Spacing y Teamfights
+> Tethering, "Threat Zones", posicionamiento avanzado y Checklist de Pro Player.
+- [**Ver: Posicionamiento y Macro**](./docs/macro.md)
 
 ---
 
-## 📜 Disclaimer
-*Aphelios ESP no está afiliado directamente con Riot Games. Utilizamos recursos autorizados provistos públicamente por Data Dragon y CommunityDragon bajo los términos de uso legales.*
+## ⚡ Resumen Rápido (Cheat Sheet)
+
+### 🔄 La Rotación Estándar (El "Ciclo de Oro")
+Para alcanzar la perfección, debes quemar tus armas en este orden exacto al inicio de la partida:
+1. **Vaciar <img src="https://raw.communitydragon.org/latest/game/assets/characters/aphelios/hud/icons2d/aphelios_severum_hud.png" width="20"> Severum** (Rojo)
+2. **Vaciar <img src="https://raw.communitydragon.org/latest/game/assets/characters/aphelios/hud/icons2d/aphelios_calibrum_hud.png" width="20"> Calibrum** (Verde)
+3. **Vaciar <img src="https://raw.communitydragon.org/latest/game/assets/characters/aphelios/hud/icons2d/aphelios_gravitum_hud.png" width="20"> Gravitum** (Morado)
+4. **Vaciar <img src="https://raw.communitydragon.org/latest/game/assets/characters/aphelios/hud/icons2d/aphelios_infernum_hud.png" width="20"> Infernum** (Azul)
+5. **Vaciar <img src="https://raw.communitydragon.org/latest/game/assets/characters/aphelios/hud/icons2d/aphelios_severum_hud.png" width="20"> Severum** (Rojo - por segunda vez)
+
+> [!TIP]
+> Esto arregla permanentemente tu cola de armas para el resto de la partida, garantizando combos devastadores como **Blanco/Verde** (Crescendum/Calibrum) y **Azul/Morado** (Infernum/Gravitum).
+
+<br>
+
+---
+<div align="center">
+  <i>"Tantas armas... pero solo Alune sabe la verdad."</i>
+</div>

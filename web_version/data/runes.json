@@ -1,0 +1,29 @@
+[
+    {
+        "id": "pta",
+        "name": "Press the Attack (PTA)",
+        "pickRate": 65.4,
+        "winRate": 50.2,
+        "description": "La runa estándar y más agresiva de Aphelios en el parche actual.",
+        "whenToUse": "Contra líneas que puedes pelear (Ej: Ezreal, Kai'Sa). Excelente para intercambios rápidos con Calibrum/Severum Q.",
+        "why": "Aphelios activa PTA muy rápido con Severum Q o Calibrum Q + autoataque. Otorga daño explosivo y sostenido."
+    },
+    {
+        "id": "fleet",
+        "name": "Fleet Footwork",
+        "pickRate": 25.1,
+        "winRate": 49.1,
+        "description": "Runa de supervivencia y escalado seguro.",
+        "whenToUse": "Contra líneas de mucho poke (Caitlyn, Ashe, Lux, Karma) o matchups donde no puedes acercarte.",
+        "why": "El sustain adicional junto a Severum te permite sobrevivir cualquier línea y llegar al mid-game."
+    },
+    {
+        "id": "conqueror",
+        "name": "Conqueror",
+        "pickRate": 9.5,
+        "winRate": 48.8,
+        "description": "Daño sostenido extremo para peleas largas.",
+        "whenToUse": "Contra composiciones con 3 o más tanques/bruisers donde las peleas durarán mucho.",
+        "why": "Severum Q y Crescendum aplican cargas extremadamente rápido. En peleas front-to-back lentas, supera en daño a PTA."
+    }
+]

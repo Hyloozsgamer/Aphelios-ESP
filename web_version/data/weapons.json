@@ -1,0 +1,67 @@
+[
+    {
+        "id": "calibrum",
+        "name": "Calibrum",
+        "color": "#22c55e",
+        "role": "Rifle de Precisión",
+        "attack": "Otorga +100 de rango adicional (total 650).",
+        "q": "Disparo lunar: Dispara un proyectil de largo alcance que marca al primer enemigo.",
+        "effect": "Las marcas pueden ser consumidas con la mano secundaria para daño adicional global.",
+        "r": "Marca a todos los enemigos alcanzados con marcas potenciadas.",
+        "best_use": "Fase de líneas, poke, asedios, ejecutar a baja vida.",
+        "worst_use": "Duelos a corta distancia, waveclear masivo.",
+        "pairs": ["Severum", "Gravitum", "Infernum", "Crescendum"]
+    },
+    {
+        "id": "severum",
+        "name": "Severum",
+        "color": "#ef4444",
+        "role": "Pistola Guadaña",
+        "attack": "No es un proyectil (instantáneo). Cura por un porcentaje del daño infligido.",
+        "q": "Arremetida: Gana velocidad de movimiento y ataca rápidamente con ambas armas al objetivo más cercano.",
+        "effect": "Sustain extremo. El exceso de curación se convierte en escudo.",
+        "r": "Cura masivamente a Aphelios al impactar.",
+        "best_use": "Duelos (1v1), kiting, sobrevivir burst, sustain en línea.",
+        "worst_use": "Asedios a largo alcance.",
+        "pairs": ["Crescendum", "Calibrum", "Infernum"]
+    },
+    {
+        "id": "gravitum",
+        "name": "Gravitum",
+        "color": "#a855f7",
+        "role": "Cañón de Gravedad",
+        "attack": "Aplica un 30% de ralentización progresiva.",
+        "q": "Eclipse: Inmoviliza (root) a todos los enemigos actualmente ralentizados por Gravitum, sin importar la distancia.",
+        "effect": "El único CC del kit de Aphelios. Excelente para setup.",
+        "r": "Ralentiza un 99% a los enemigos impactados.",
+        "best_use": "Evitar engage (Peel), setup para el jungla, cazadas.",
+        "worst_use": "DPS puro.",
+        "pairs": ["Infernum", "Calibrum"]
+    },
+    {
+        "id": "infernum",
+        "name": "Infernum",
+        "color": "#3b82f6",
+        "role": "Lanzallamas",
+        "attack": "El daño en área (AoE) en forma de cono detrás del objetivo.",
+        "q": "Ola Crepuscular: Lanza una ola de fuego y luego ataca a todos los enemigos impactados con el arma secundaria.",
+        "effect": "Waveclear y daño crítico masivo en peleas agrupadas.",
+        "r": "Explosiones circulares que se solapan (El clásico wombo combo de Aphelios).",
+        "best_use": "Teamfights de 5v5 agrupados, limpiar oleadas rápido, burst.",
+        "worst_use": "Duelos 1v1 contra bruisers/asesinos.",
+        "pairs": ["Gravitum", "Crescendum", "Calibrum"]
+    },
+    {
+        "id": "crescendum",
+        "name": "Crescendum",
+        "color": "#f8fafc",
+        "role": "Chakram",
+        "attack": "Funciona como un boomerang. Cuanto más cerca estás, más rápido atacas.",
+        "q": "Centinela: Despliega una torreta que ataca con el arma secundaria.",
+        "effect": "DPS máximo cuerpo a cuerpo. Genera 'mini chakrams' al usar habilidades de otras armas.",
+        "r": "Genera chakrams adicionales instantáneamente.",
+        "best_use": "Baron, Dragón, duelos melee, tanques, máximo DPS.",
+        "worst_use": "Asedios a largo alcance sin setup.",
+        "pairs": ["Severum", "Calibrum", "Infernum"]
+    }
+]
