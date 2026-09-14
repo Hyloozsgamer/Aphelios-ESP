@@ -42,29 +42,6 @@ Esta guía está dividida en 5 tomos enciclopédicos. Estudia cada uno en orden.
 
 Imprime esto o memorízalo. Debes procesar esta lista mentalmente **cada 3 segundos** durante la fase de líneas y *antes* de que comience cualquier pelea.
 
-```text
-===================================================
-                APHELIOS LIVE HUD
-===================================================
-
-[ WEAPONS ]
-  Actual:    [ Arma A ] + [ Arma B ]
-  Ammo:      [ XX / 50 ]  [ YY / 50 ]
-  Siguiente: [ Arma C ]
-  Plan:      "Voy a gastar A en 2 golpes, luego B+C."
-
-[ THREAT PRIORITY (Top 2) ]
-  #1: [ Campeón + Habilidad ] (Ej: Malphite R) -> STATUS: [ AVAILABLE / DOWN / FOG ]
-  #2: [ Campeón + Habilidad ] (Ej: Syndra E)  -> STATUS: [ AVAILABLE / DOWN / FOG ]
-
-[ FLASH ECONOMY ]
-  Mi Flash:      [ UP / DOWN ]
-  Flash Enemigo: [ UP / DOWN ] (Calcula la Threat Zone extendida).
-
-[ POSITIONING PERMISSION ]
-  [ ] ¿Mi Bodyguard (Support/Tanque) está en rango de reaccionar?
-  [ ] ¿Tengo ángulo de DPS Seguro (Safe DPS Angle) sin atravesar daño de área?
-  [ ] ¿Cuál es mi EXIT (Salida)? (Muro, arbusto, Linterna de Thresh).
-
-===================================================
-```
+<div align="center">
+  <img src="./assets/live_hud.jpg" alt="Aphelios Live HUD" width="100%" style="border-radius: 10px; border: 2px solid #555; box-shadow: 0 4px 15px rgba(0,0,0,0.8);">
+</div>
