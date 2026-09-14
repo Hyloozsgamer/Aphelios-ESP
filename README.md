@@ -1,50 +1,57 @@
-# 🌙 Aphelios & Alune Pro-Tier Twitch Overlay V4
+# 🌙 Aphelios ESP — La Guía Definitiva
 
-Bienvenido a la **Versión 4** del overlay definitivo para OTP Aphelios. Diseñado meticulosamente para streamers de alto nivel y pro-players, este overlay combina una estética inmersiva de Targon con funcionalidades interactivas de última generación.
+> *Desde los fundamentos hasta las decisiones de un jugador profesional (Challenger / Pro Play).*
 
----
-
-## ✨ Características Premium
-- **Fondo Parallax 2.5D**: Un entorno cósmico de Targon con múltiples capas de profundidad y efectos atmosféricos. Adaptado con recorte (clip-path) para integrar el cliente del juego limpiamente.
-- **Marcos Dinámicos**: Soporte para marcos de video (WebM) o marcos estáticos personalizados de alta calidad.
-- **Sprites Inteligentes (Aphelios & Alune)**: Chibis animados que patrullan tu pantalla. Alune persigue a Aphelios y ambos reaccionan en tiempo real a los eventos del stream.
-- **Chat Interactivo (Lunar Whispers)**:
-  - Chat nativo de Twitch con sistema anti-spam (fade-out automático).
-  - Comandos integrados (ej. `!poro`, `!arma`) que activan animaciones en pantalla y efectos de sonido.
-  - Alune reacciona dinámicamente cuando tu chat menciona a "Aphelios" o "Phel".
-- **Integración con Streamlabs (HUD)**: Alertas instantáneas y elegantes para Follows, Subs, Donaciones y Bits. Interfaz minimalista de cristal (Glassmorphism).
+Bienvenido a la **Guía Definitiva de Aphelios en español**, una referencia técnica y visual interactiva diseñada para dominar al Arma de los Fieles. Esta guía está orientada tanto a jugadores principiantes como a profesionales.
 
 ---
 
-## 🚀 Instalación en OBS / Streamlabs
-1. Extrae el contenido en una carpeta dedicada de tu PC.
-2. Abre tu software de transmisión (OBS Studio o Streamlabs Desktop) y añade una nueva **Fuente de Navegador (Browser Source)**.
-3. Marca la casilla **"Archivo Local"**.
-4. Haz clic en **Examinar** y selecciona el archivo `index.html` de este proyecto.
-5. Ajusta la **Resolución**: Ancho `1920` / Alto `1080`.
-6. Habilita las opciones:
-   - *"Apagar fuente cuando no sea visible"*
-   - *"Actualizar el navegador cuando la escena se active"* (ideal para recargar las animaciones).
-7. Sitúa tu captura de juego (Game Capture) **debajo** de esta Fuente de Navegador para aprovechar el recorte de la ventana central.
+## ☄️ Estado Actual
+- **Parche:** `16.18.1`
+- **Fuente de Datos:** LoLalytics (Emerald+)
+- **Actualización:** Automática / Semi-automática a través de API y archivos JSON.
 
 ---
 
-## ⚙️ Configuración del Stream
-Para enlazar tu chat y tus alertas:
-1. Renombra `config.example.js` a **`config.js`**.
-2. Ábrelo con un editor de texto o código (ej. VSCode).
-3. Cambia `TWITCH_CHANNEL` por tu nombre de usuario exacto en Twitch.
-4. Vincula tu **Streamlabs Socket Token**:
-   - Inicia sesión en tu Dashboard de Streamlabs.
-   - Ve a `Ajustes -> API Tokens -> Socket API`.
-   - Copia tu token y pégalo en el archivo `config.js`.
+## ✨ Características de la Guía
+
+1. **Simulador Interactivo de Rotaciones:** Un simulador JavaScript nativo que te permite entender matemáticamente la gestión de munición, planificar tu "Weapon Queue" y arreglar rotaciones rotas en tiempo real.
+2. **Matchups Estructurados:** Base de datos separada (arquitectura JSON en `/data/`) que proporciona un plan de juego y condiciones de victoria para cada ADC en el meta actual.
+3. **Secciones de Macro / Micro:** Explicaciones visuales del *Spacing*, *Tethering*, y diagramas interactivos sobre el posicionamiento óptimo en Teamfights según tus armas actuales.
+4. **Diseño Premium Targon:** Estética construida 100% en Vanilla CSS con estilo *Glassmorphism*, Dark Mode por defecto, y tipografías inmersivas.
+5. **Data Separation:** Toda la información estadística y estratégica reside en la carpeta `/data/` (ej. `meta.json`, `matchups.json`) para actualizar la guía fácilmente en cada parche sin romper los componentes web.
 
 ---
 
-## 🎨 Personalización (Assets)
-- **Fondo y Marco**: Ubicados en `assets/images/`. Para cambiar el marco, reemplaza `custom_frame.png`.
-- **Sprites**: Las animaciones de los personajes están en `assets/sprites/`. Para modificarlos, reemplaza las hojas de sprites correspondientes respetando la cuadrícula.
+## 🚀 Arquitectura Técnica
+
+Este proyecto está construido para ser rápido, escalable y alojado estáticamente en **GitHub Pages**.
+
+- **HTML5 Semántico:** Estructura orientada al SEO y la accesibilidad.
+- **Vanilla CSS:** Sin frameworks pesados. Animaciones optimizadas.
+- **Vanilla JS:** Lógica interactiva nativa (Simulador, Tooltips, Lectura de JSON).
+
+### Estructura de Directorios:
+```text
+/
+├── assets/          # Imágenes y recursos visuales permitidos (Data Dragon)
+├── css/             # Diseño Targon y sistema de Grid
+├── js/              # Lógica del simulador interactivo
+├── data/            # Bases de datos JSON (Matchups, Meta, Builds)
+├── overlay/         # [LEGACY] El overlay de Twitch original de EspetosMaker V4
+├── index.html       # La aplicación principal (Single Page Application estructurada)
+└── README.md
+```
 
 ---
 
-*Diseñado para la comunidad Lunari. Que la luna guíe tus partidas.*
+## ⚙️ Desarrollo Local
+
+1. Clona el repositorio: `git clone https://github.com/Hyloozsgamer/Aphelios-ESP.git`
+2. Puesto que es HTML/JS puro, no necesitas instalar NodeJS ni dependencias.
+3. Puedes utilizar la extensión **Live Server** de VSCode, o simplemente abrir `index.html` en tu navegador para ver la guía, aunque algunas lecturas de archivos JSON locales (`/data/`) podrían requerir un servidor HTTP ligero (ej: `python -m http.server`).
+
+---
+
+## 📜 Disclaimer
+*Aphelios ESP no está afiliado directamente con Riot Games. Utilizamos recursos autorizados provistos públicamente por Data Dragon y CommunityDragon bajo los términos de uso legales.*

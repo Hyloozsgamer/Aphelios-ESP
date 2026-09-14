@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EspetosMaker - V4 Aphelios Overlay</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- TRUE 2.5D Parallax Background -->
+    <div id="parallax-container">
+        <!-- New Background Layer with Animation -->
+        <div class="layer layer-sky cosmic-breathe" style="background-image: url('assets/images/custom_bg.jpg');"></div>
+        
+        <!-- Foreground Characters Frame (Static Image overlay) -->
+        <img src="assets/images/custom_frame.png" class="layer layer-frame" style="z-index: 15; pointer-events: none; object-fit: fill;" alt="Custom Frame">
+        
+        <!-- Atmospheric and Foreground -->
+        <div class="layer layer-fog"></div>
+        <div class="layer layer-particles" id="particles-js"></div>
+        <div class="layer layer-petals"></div>
+    </div>
+
+    <!-- Dedicated Game Window Area -->
+    <div id="game-window">
+    </div>
+
+    <!-- Sprites Container orbiting the screen -->
+    <div id="sprites-layer">
+        <div id="aphelios-container" class="sprite-container">
+            <div id="aphelios-sprite" class="sprite-image spritesheet"></div>
+        </div>
+        <div id="alune-container" class="sprite-container">
+            <div id="alune-sprite" class="sprite-image spritesheet"></div>
+            <!-- Alune Chat Bubble -->
+            <div id="alune-bubble" class="chat-bubble hidden"></div>
+        </div>
+    </div>
+
+        <!-- Branding -->
+        <div id="branding">
+            <h1 class="brand-name">ESPETOSMAKER</h1>
+            <h2 class="brand-title">OTP APHELIOS</h2>
+        </div>
+
+
+
+        <!-- Advanced Twitch Chat -->
+    <div id="chat-container">
+        <div class="chat-header">Lunar Whispers</div>
+        <div id="chat-messages" class="chat-messages-container"></div>
+    </div>
+
+    <!-- Promotional Banners -->
+    <div id="promo-banner-left" class="promo-banner left">
+        <img src="assets/images/banner_tiktok.png" alt="Sígueme en TikTok">
+    </div>
+    <div id="promo-banner-right" class="promo-banner right">
+        <img src="assets/images/banner_youtube.png" alt="Subscríbete a YouTube">
+    </div>
+
+    <!-- Streamlabs Notifications / HUD separated from background -->
+    <div id="hud-container">
+        <!-- New Goal Bar -->
+        <div class="hud-goal-container">
+            <div class="hud-goal-label">
+                <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,19.93C7.05,19.43 4,16.05 4,12C4,7.95 7.05,4.57 11,4.07V19.93M13,4.07C16.95,4.57 20,7.95 20,12C20,16.05 16.95,19.43 13,19.93V4.07Z"/></svg>
+                <span>LUNAR GOAL</span>
+            </div>
+            <div class="hud-goal-bar">
+                <div class="hud-goal-fill" id="goal-fill" style="width: 0%;"></div>
+            </div>
+            <div class="hud-goal-text" id="goal-text">0 / 50</div>
+        </div>
+
+        <div class="hud-item follow-box">
+            <div class="hud-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/></svg>
+            </div>
+            <div class="hud-info">
+                <div class="hud-label">LATEST FOLLOW</div>
+                <div class="hud-value" id="latest-follow">Unknown</div>
+            </div>
+        </div>
+        <div class="hud-item sub-box">
+            <div class="hud-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12,2L14.82,8.38L21.72,9L16.5,13.72L17.97,20.5L12,17L6.03,20.5L7.5,13.72L2.28,9L9.18,8.38L12,2Z"/></svg>
+            </div>
+            <div class="hud-info">
+                <div class="hud-label">LATEST SUB</div>
+                <div class="hud-value" id="latest-sub">Unknown</div>
+            </div>
+        </div>
+        <div class="hud-item dono-box">
+            <div class="hud-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,17V16H9V14H13V13H10A1,1 0 0,1 9,12V10A1,1 0 0,1 10,9H11V8H13V9H15V11H11V12H14A1,1 0 0,1 15,13V15A1,1 0 0,1 14,16H13V17H11Z"/></svg>
+            </div>
+            <div class="hud-info">
+                <div class="hud-label">LATEST DONO</div>
+                <div class="hud-value" id="latest-dono">-</div>
+            </div>
+        </div>
+        <div class="hud-item bits-box">
+            <div class="hud-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12,2L22,12L12,22L2,12L12,2M12,4.83L4.83,12L12,19.17L19.17,12L12,4.83M12,7L17,12L12,17L7,12L12,7Z"/></svg>
+            </div>
+            <div class="hud-info">
+                <div class="hud-label">LATEST BITS</div>
+                <div class="hud-value" id="latest-bits">-</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Central Alert Popups -->
+    <div id="alert-container" class="hidden">
+        <div class="alert-content">
+            <h3 id="alert-title">New Event!</h3>
+            <p id="alert-message">Thank you for your support.</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Effects Canvas -->
+    <canvas id="fx-canvas"></canvas>
+
+    <script>
+        // Global error handler
+        window.onerror = function(msg, url, lineNo, columnNo, error) {
+            const err = document.createElement('div');
+            err.style.position = 'fixed';
+            err.style.top = '10px'; err.style.left = '10px';
+            err.style.background = 'red'; err.style.color = 'white';
+            err.style.padding = '10px'; err.style.zIndex = '99999';
+            err.innerText = `Error: ${msg} (${lineNo})`;
+            document.body.appendChild(err);
+        };
+    </script>
+    <script src="https://github.com/tmijs/tmi.js/releases/download/v1.8.5/tmi.min.js"></script>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="config.js"></script>
+    <script src="js/sprites.js"></script>
+    <script src="js/twitch_chat.js"></script>
+    <script src="js/streamlabs.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

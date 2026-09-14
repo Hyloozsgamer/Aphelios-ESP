@@ -1,95 +1,119 @@
-// js/main.js
-
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("EspetosMaker Overlay Loaded.");
-    
-    // Simple Parallax Effect based on mouse movement (optional, if testing in browser)
-    // In OBS this won't trigger unless interacted with, but looks cool for testing.
-    if (CONFIG.ENABLE_PARALLAX) {
-        document.addEventListener('mousemove', (e) => {
-            const x = (e.clientX / window.innerWidth - 0.5) * 20;
-            const y = (e.clientY / window.innerHeight - 0.5) * 20;
+    // Current Patch is statically set to 16.18.1 per requirements, but date is dynamic.
+    const dateSpan = document.getElementById('current-date');
+    if (dateSpan) {
+        const today = new Date();
+        dateSpan.textContent = today.toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' });
+    }
 
-            const sky = document.querySelector('.layer-sky');
-            const moon = document.querySelector('.layer-moon');
-            const mountains = document.querySelector('.layer-mountains');
+    // Smooth Scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
             
-            if (sky) sky.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
-            if (moon) moon.style.transform = `translate(${x * 0.5}px, ${y * 0.5}px)`;
-            if (mountains) mountains.style.transform = `translate(${x * 1.5}px, ${y * 1.5}px)`;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const headerOffset = 80;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Simple interaction for weapon cards
+    const weaponCards = document.querySelectorAll('.weapon-card');
+    weaponCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            // Future logic for weapon hover tooltips
+        });
+    });
+
+    // --- Weapon Rotation Simulator ---
+    const WEAPONS = {
+        CALIBRUM: { id: 'calibrum', name: 'Calibrum', class: 'calibrum-bg' },
+        SEVERUM: { id: 'severum', name: 'Severum', class: 'severum-bg' },
+        GRAVITUM: { id: 'gravitum', name: 'Gravitum', class: 'gravitum-bg' },
+        INFERNUM: { id: 'infernum', name: 'Infernum', class: 'infernum-bg' },
+        CRESCENDUM: { id: 'crescendum', name: 'Crescendum', class: 'crescendum-bg' }
+    };
+
+    let state = {
+        main: WEAPONS.SEVERUM,
+        off: WEAPONS.CRESCENDUM,
+        queue: [WEAPONS.CALIBRUM, WEAPONS.INFERNUM, WEAPONS.GRAVITUM]
+    };
+
+    const simMain = document.getElementById('sim-main-weapon');
+    const simOff = document.getElementById('sim-offhand-weapon');
+    const simQueue = document.getElementById('sim-queue-weapons');
+    const simLog = document.getElementById('sim-log');
+
+    function renderSimulator() {
+        if(!simMain) return;
+        simMain.className = `weapon-circle ${state.main.class}`;
+        simMain.textContent = state.main.name;
+
+        simOff.className = `weapon-circle ${state.off.class}`;
+        simOff.textContent = state.off.name;
+
+        simQueue.innerHTML = '';
+        state.queue.forEach(w => {
+            const span = document.createElement('span');
+            span.className = `weapon-dot ${w.class}`;
+            span.title = w.name;
+            simQueue.appendChild(span);
         });
     }
 
-    // Initialize Particles (optional, simulating particle effect without external library)
-    const particleContainer = document.getElementById('particles-js');
-    if (particleContainer) {
-        for (let i = 0; i < 50; i++) {
-            let p = document.createElement('div');
-            p.style.position = 'absolute';
-            p.style.width = Math.random() * 3 + 'px';
-            p.style.height = p.style.width;
-            p.style.background = '#fff';
-            p.style.borderRadius = '50%';
-            p.style.boxShadow = '0 0 5px #fff, 0 0 10px var(--primary-color)';
-            p.style.left = Math.random() * 100 + '%';
-            p.style.top = Math.random() * 100 + '%';
-            p.style.opacity = Math.random() * 0.5 + 0.2;
-            
-            // Simple animation
-            let duration = Math.random() * 10 + 5;
-            p.style.transition = `top ${duration}s linear, opacity ${duration}s ease-in-out`;
-            
-            particleContainer.appendChild(p);
-
-            // Animate upwards
-            setTimeout(() => {
-                p.style.top = '-10%';
-                p.style.opacity = '0';
-            }, 100);
-
-            // Reset loop
-            setInterval(() => {
-                p.style.transition = 'none';
-                p.style.top = '110%';
-                p.style.left = Math.random() * 100 + '%';
-                p.style.opacity = Math.random() * 0.5 + 0.2;
-                
-                setTimeout(() => {
-                    p.style.transition = `top ${duration}s linear, opacity ${duration}s ease-in-out`;
-                    p.style.top = '-10%';
-                    p.style.opacity = '0';
-                }, 50);
-            }, duration * 1000);
-        }
+    function logAction(msg) {
+        if(!simLog) return;
+        simLog.innerHTML = `<em>${msg}</em>`;
     }
 
-    // Promotional Banners Logic
-    const bannerLeft = document.getElementById('promo-banner-left');
-    const bannerRight = document.getElementById('promo-banner-right');
-    
-    if (bannerLeft && bannerRight) {
-        // Interval: show banners every 3 minutes (180,000 ms)
-        const bannerInterval = 180000;
-        
-        const showBanners = () => {
-            // Show TikTok (left) banner
-            setTimeout(() => {
-                bannerLeft.classList.add('show');
-                setTimeout(() => bannerLeft.classList.remove('show'), 15000); // hide after 15s
-            }, 1000);
-            
-            // Show YouTube (right) banner 4 seconds later
-            setTimeout(() => {
-                bannerRight.classList.add('show');
-                setTimeout(() => bannerRight.classList.remove('show'), 15000);
-            }, 5000);
-        };
+    const btnEmptyMain = document.getElementById('btn-empty-main');
+    const btnEmptyOff = document.getElementById('btn-empty-off');
+    const btnResetSim = document.getElementById('btn-reset-sim');
 
-        // Start cycle
-        setInterval(showBanners, bannerInterval);
-        
-        // Initial trigger after 20 seconds so the streamer doesn't have to wait 3 mins to test it
-        setTimeout(showBanners, 20000);
+    if(btnEmptyMain) {
+        btnEmptyMain.addEventListener('click', () => {
+            const oldMain = state.main;
+            const nextWeapon = state.queue.shift();
+            state.main = nextWeapon;
+            state.queue.push(oldMain);
+            logAction(`Vaciaste ${oldMain.name}. Entra ${nextWeapon.name}.`);
+            renderSimulator();
+        });
     }
+
+    if(btnEmptyOff) {
+        btnEmptyOff.addEventListener('click', () => {
+            const oldOff = state.off;
+            const nextWeapon = state.queue.shift();
+            state.off = nextWeapon;
+            state.queue.push(oldOff);
+            logAction(`Vaciaste ${oldOff.name}. Entra ${nextWeapon.name}.`);
+            renderSimulator();
+        });
+    }
+
+    if(btnResetSim) {
+        btnResetSim.addEventListener('click', () => {
+            state = {
+                main: WEAPONS.SEVERUM,
+                off: WEAPONS.CRESCENDUM,
+                queue: [WEAPONS.CALIBRUM, WEAPONS.INFERNUM, WEAPONS.GRAVITUM]
+            };
+            logAction('Simulador reseteado a rotación estándar (Red-White).');
+            renderSimulator();
+        });
+    }
+
+    renderSimulator();
 });
-

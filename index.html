@@ -1,149 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EspetosMaker - V4 Aphelios Overlay</title>
+    <meta name="description" content="Aphelios ESP: La guía definitiva técnica y visual de Aphelios para League of Legends. Desde principiante hasta Challenger.">
+    <title>Aphelios ESP - La Guía Definitiva</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <!-- Google Fonts for modern typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- TRUE 2.5D Parallax Background -->
-    <div id="parallax-container">
-        <!-- New Background Layer with Animation -->
-        <div class="layer layer-sky cosmic-breathe" style="background-image: url('assets/images/custom_bg.jpg');"></div>
+    <!-- Background Effects -->
+    <div class="cosmic-bg">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="glass-nav">
+        <div class="nav-container">
+            <div class="brand">
+                <h1>APHELIOS <span>ESP</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#armas">Armas</a></li>
+                    <li><a href="#rotacion">Rotación</a></li>
+                    <li><a href="#stats">Estadísticas</a></li>
+                    <li><a href="#macro">Macro & Micro</a></li>
+                    <li><a href="overlay/index.html" class="legacy-btn">Overlay Legacy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="patch-badge">
+                    <span class="badge-icon">☄️</span>
+                    <span class="badge-text">Parche Actual: <strong id="current-patch">16.18.1</strong></span>
+                    <span class="badge-date">Última act: <span id="current-date">14/09/2026</span></span>
+                </div>
+                <h1 class="hero-title">LA GUÍA DEFINITIVA DE <span class="text-glow">APHELIOS</span></h1>
+                <p class="hero-subtitle">Desde los fundamentos hasta las decisiones de un jugador profesional (Challenger/Pro Play).</p>
+                <div class="hero-buttons">
+                    <a href="#armas" class="btn btn-primary">Descubrir Armas</a>
+                    <a href="#rotacion" class="btn btn-secondary">Aprender Rotación</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weapons Section -->
+        <section id="armas" class="section">
+            <div class="section-header">
+                <h2>El Arsenal de Targon</h2>
+                <p>Comprende cada arma, su propósito, y cuándo utilizarla.</p>
+            </div>
+            
+            <div class="weapons-grid">
+                <!-- Calibrum -->
+                <div class="weapon-card" data-weapon="calibrum">
+                    <div class="weapon-icon calibrum-bg"></div>
+                    <div class="weapon-info">
+                        <h3>Calibrum <span class="weapon-role">(Rifle de Precisión)</span></h3>
+                        <p class="weapon-desc">Rango y desgaste (Poke). Ideal para fase de líneas y asegurar daño desde zonas seguras.</p>
+                        <div class="weapon-stats">
+                            <span class="stat-tag">Rango: 650</span>
+                            <span class="stat-tag">Poke</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Severum -->
+                <div class="weapon-card" data-weapon="severum">
+                    <div class="weapon-icon severum-bg"></div>
+                    <div class="weapon-info">
+                        <h3>Severum <span class="weapon-role">(Pistola Guadaña)</span></h3>
+                        <p class="weapon-desc">Sustain, curación y velocidad de movimiento. Fundamental para duelos y supervivencia.</p>
+                        <div class="weapon-stats">
+                            <span class="stat-tag">Robo de Vida</span>
+                            <span class="stat-tag">Kiting</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gravitum -->
+                <div class="weapon-card" data-weapon="gravitum">
+                    <div class="weapon-icon gravitum-bg"></div>
+                    <div class="weapon-info">
+                        <h3>Gravitum <span class="weapon-role">(Cañón de Gravedad)</span></h3>
+                        <p class="weapon-desc">Control de masas (CC) y utilidad. Atrapa enemigos o prepara gankeos para tu equipo.</p>
+                        <div class="weapon-stats">
+                            <span class="stat-tag">Slow / Root</span>
+                            <span class="stat-tag">Setup</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Infernum -->
+                <div class="weapon-card" data-weapon="infernum">
+                    <div class="weapon-icon infernum-bg"></div>
+                    <div class="weapon-info">
+                        <h3>Infernum <span class="weapon-role">(Lanzallamas)</span></h3>
+                        <p class="weapon-desc">Daño en área (AoE) y limpieza de oleadas. El arma definitiva para teamfights agrupadas.</p>
+                        <div class="weapon-stats">
+                            <span class="stat-tag">Waveclear</span>
+                            <span class="stat-tag">Burst AoE</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Crescendum -->
+                <div class="weapon-card" data-weapon="crescendum">
+                    <div class="weapon-icon crescendum-bg"></div>
+                    <div class="weapon-info">
+                        <h3>Crescendum <span class="weapon-role">(Chakram)</span></h3>
+                        <p class="weapon-desc">DPS a corta distancia y control de objetivos. El mayor daño posible cuerpo a cuerpo.</p>
+                        <div class="weapon-stats">
+                            <span class="stat-tag">DPS Melee</span>
+                            <span class="stat-tag">Objetivos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="section glass-section">
+            <div class="section-header">
+                <h2>Estadísticas y Meta</h2>
+                <p>Datos actualizados basados en fuentes oficiales.</p>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stats-header">
+                    <span class="source-badge">Fuente: LoLalytics</span>
+                    <span class="source-badge">Elo: Emerald+</span>
+                    <span class="source-badge">Muestra: 120,450 partidas</span>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-value">49.8%</div>
+                        <div class="stat-label">Win Rate</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value">8.5%</div>
+                        <div class="stat-label">Pick Rate</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value">3.2%</div>
+                        <div class="stat-label">Ban Rate</div>
+                    </div>
+                </div>
+                <div class="stats-footer">
+                    *Estadísticas orientativas, un buen Aphelios rompe los porcentajes.*
+                </div>
+            </div>
+        </section>
+
+        <!-- Weapon Rotation Simulator -->
+        <section id="rotacion" class="section">
+            <div class="section-header">
+                <h2>Simulador de Rotación</h2>
+                <p>Domina el orden óptimo (Severum &rarr; Crescendum &rarr; Calibrum &rarr; Infernum &rarr; Gravitum) y aprende a arreglar tu ciclo.</p>
+            </div>
+            <div class="simulator-container glass-section">
+                <div class="simulator-status">
+                    <div class="sim-main">
+                        <h4>Arma Principal</h4>
+                        <div id="sim-main-weapon" class="weapon-circle severum-bg">Severum</div>
+                    </div>
+                    <div class="sim-offhand">
+                        <h4>Secundaria</h4>
+                        <div id="sim-offhand-weapon" class="weapon-circle crescendum-bg">Crescendum</div>
+                    </div>
+                    <div class="sim-queue">
+                        <h4>En Cola</h4>
+                        <div id="sim-queue-weapons" class="queue-list">
+                            <span class="weapon-dot calibrum-bg"></span>
+                            <span class="weapon-dot infernum-bg"></span>
+                            <span class="weapon-dot gravitum-bg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="simulator-controls">
+                    <button class="btn btn-primary" id="btn-empty-main">Vaciar Principal (-50)</button>
+                    <button class="btn btn-secondary" id="btn-empty-off">Vaciar Secundaria (-50)</button>
+                    <button class="btn legacy-btn" id="btn-reset-sim">Reset a Estándar</button>
+                </div>
+                <div class="simulator-log" id="sim-log">
+                    <em>Simulador iniciado en rotación estándar (Red-White).</em>
+                </div>
+            </div>
+        </section>
+
+        <!-- Matchups -->
+        <section id="matchups" class="section">
+            <div class="section-header">
+                <h2>Matchups (Tiradores)</h2>
+                <p>Cómo jugar la fase de líneas contra el meta actual.</p>
+            </div>
+            <div class="matchups-grid">
+                <div class="matchup-card glass-section">
+                    <h3>vs Jinx</h3>
+                    <div class="matchup-diff diff-medium">Dificultad: Media (5/10)</div>
+                    <p><strong>Lane:</strong> Prioriza Calibrum para castigar su falta de movilidad temprana. No dejes que acumule minigun de gratis.</p>
+                    <p><strong>Condición de victoria:</strong> Teamfights con Infernum o duelos a corta distancia con Crescendum antes de que tenga 3 items.</p>
+                </div>
+                <div class="matchup-card glass-section">
+                    <h3>vs Draven</h3>
+                    <div class="matchup-diff diff-hard">Dificultad: Difícil (8/10)</div>
+                    <p><strong>Lane:</strong> Juega pasivo. Usa Gravitum para ganks. Evita los all-in 2v2 a menos que tu support acierte un CC duro.</p>
+                    <p><strong>Condición de victoria:</strong> Sobrevivir. Escalas mejor en teamfights de 5v5 con Infernum.</p>
+                </div>
+                <div class="matchup-card glass-section">
+                    <h3>vs Ezreal</h3>
+                    <div class="matchup-diff diff-easy">Dificultad: Fácil (3/10)</div>
+                    <p><strong>Lane:</strong> Escóndete detrás de los minions. Con Severum tienes mejor sustain que su poke. Empuja la oleada y obtén prioridad.</p>
+                    <p><strong>Condición de victoria:</strong> Superioridad de waveclear y DPS puro en mid-late game.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Macro / Teamfights -->
+        <section id="macro" class="section">
+            <div class="section-header">
+                <h2>Macro y Posicionamiento</h2>
+                <p>Las decisiones que separan a un Diamante de un Challenger.</p>
+            </div>
+            <div class="macro-content glass-section">
+                <h3>El Arte del Spacing (Auto-spacing y Tethering)</h3>
+                <p>Aphelios tiene 550 de rango base, pero fluctúa con Calibrum (650). Entender la <strong>Threat Zone</strong> (Zona de amenaza) del enemigo es vital. Nunca entres en rango del CC clave enemigo sin tener Flash o Galeforce/Shieldbow (si aplica). Usa Severum Q para reposicionarte rápidamente mientras haces daño.</p>
+                
+                <h3>Preparación de Objetivos (Dragon / Nashor)</h3>
+                <p>A <strong>T-60 segundos</strong> del dragón, debes estar configurando tus armas. Las armas ideales para asegurar un objetivo rápido son <strong>Crescendum + Infernum/Severum</strong>. Si anticipas una pelea cerrada de 5v5 front-to-back, busca <strong>Infernum + Gravitum/Calibrum</strong>.</p>
+
+                <h3>Checklist de Pro Player</h3>
+                <ul class="pro-checklist">
+                    <li><input type="checkbox" checked disabled> ¿He localizado al asesino rival en el mapa?</li>
+                    <li><input type="checkbox" checked disabled> ¿Tengo mis mejores armas para la próxima pelea?</li>
+                    <li><input type="checkbox" checked disabled> ¿He trackeado el Flash del engage enemigo?</li>
+                    <li><input type="checkbox" checked disabled> ¿Tengo claro a quién debo hacerle DPS? (Front-to-back)</li>
+                </ul>
+            </div>
+        </section>
         
-        <!-- Foreground Characters Frame (Static Image overlay) -->
-        <img src="assets/images/custom_frame.png" class="layer layer-frame" style="z-index: 15; pointer-events: none; object-fit: fill;" alt="Custom Frame">
-        
-        <!-- Atmospheric and Foreground -->
-        <div class="layer layer-fog"></div>
-        <div class="layer layer-particles" id="particles-js"></div>
-        <div class="layer layer-petals"></div>
-    </div>
+        <!-- More sections to be added dynamically or below -->
+    </main>
 
-    <!-- Dedicated Game Window Area -->
-    <div id="game-window">
-    </div>
-
-    <!-- Sprites Container orbiting the screen -->
-    <div id="sprites-layer">
-        <div id="aphelios-container" class="sprite-container">
-            <div id="aphelios-sprite" class="sprite-image spritesheet"></div>
-        </div>
-        <div id="alune-container" class="sprite-container">
-            <div id="alune-sprite" class="sprite-image spritesheet"></div>
-            <!-- Alune Chat Bubble -->
-            <div id="alune-bubble" class="chat-bubble hidden"></div>
-        </div>
-    </div>
-
-        <!-- Branding -->
-        <div id="branding">
-            <h1 class="brand-name">ESPETOSMAKER</h1>
-            <h2 class="brand-title">OTP APHELIOS</h2>
-        </div>
-
-
-
-        <!-- Advanced Twitch Chat -->
-    <div id="chat-container">
-        <div class="chat-header">Lunar Whispers</div>
-        <div id="chat-messages" class="chat-messages-container"></div>
-    </div>
-
-    <!-- Promotional Banners -->
-    <div id="promo-banner-left" class="promo-banner left">
-        <img src="assets/images/banner_tiktok.png" alt="Sígueme en TikTok">
-    </div>
-    <div id="promo-banner-right" class="promo-banner right">
-        <img src="assets/images/banner_youtube.png" alt="Subscríbete a YouTube">
-    </div>
-
-    <!-- Streamlabs Notifications / HUD separated from background -->
-    <div id="hud-container">
-        <!-- New Goal Bar -->
-        <div class="hud-goal-container">
-            <div class="hud-goal-label">
-                <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,19.93C7.05,19.43 4,16.05 4,12C4,7.95 7.05,4.57 11,4.07V19.93M13,4.07C16.95,4.57 20,7.95 20,12C20,16.05 16.95,19.43 13,19.93V4.07Z"/></svg>
-                <span>LUNAR GOAL</span>
-            </div>
-            <div class="hud-goal-bar">
-                <div class="hud-goal-fill" id="goal-fill" style="width: 0%;"></div>
-            </div>
-            <div class="hud-goal-text" id="goal-text">0 / 50</div>
-        </div>
-
-        <div class="hud-item follow-box">
-            <div class="hud-icon">
-                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/></svg>
-            </div>
-            <div class="hud-info">
-                <div class="hud-label">LATEST FOLLOW</div>
-                <div class="hud-value" id="latest-follow">Unknown</div>
-            </div>
-        </div>
-        <div class="hud-item sub-box">
-            <div class="hud-icon">
-                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12,2L14.82,8.38L21.72,9L16.5,13.72L17.97,20.5L12,17L6.03,20.5L7.5,13.72L2.28,9L9.18,8.38L12,2Z"/></svg>
-            </div>
-            <div class="hud-info">
-                <div class="hud-label">LATEST SUB</div>
-                <div class="hud-value" id="latest-sub">Unknown</div>
-            </div>
-        </div>
-        <div class="hud-item dono-box">
-            <div class="hud-icon">
-                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,17V16H9V14H13V13H10A1,1 0 0,1 9,12V10A1,1 0 0,1 10,9H11V8H13V9H15V11H11V12H14A1,1 0 0,1 15,13V15A1,1 0 0,1 14,16H13V17H11Z"/></svg>
-            </div>
-            <div class="hud-info">
-                <div class="hud-label">LATEST DONO</div>
-                <div class="hud-value" id="latest-dono">-</div>
-            </div>
-        </div>
-        <div class="hud-item bits-box">
-            <div class="hud-icon">
-                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12,2L22,12L12,22L2,12L12,2M12,4.83L4.83,12L12,19.17L19.17,12L12,4.83M12,7L17,12L12,17L7,12L12,7Z"/></svg>
-            </div>
-            <div class="hud-info">
-                <div class="hud-label">LATEST BITS</div>
-                <div class="hud-value" id="latest-bits">-</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Central Alert Popups -->
-    <div id="alert-container" class="hidden">
-        <div class="alert-content">
-            <h3 id="alert-title">New Event!</h3>
-            <p id="alert-message">Thank you for your support.</p>
-        </div>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Aphelios ESP - La Guía Definitiva. Creado con ❤️ para la comunidad de League of Legends.</p>
+        <p><small>Este proyecto no está afiliado directamente con Riot Games. Usa recursos autorizados de Data Dragon y CommunityDragon.</small></p>
+    </footer>
 
     <!-- Scripts -->
-    <!-- Effects Canvas -->
-    <canvas id="fx-canvas"></canvas>
-
-    <script>
-        // Global error handler
-        window.onerror = function(msg, url, lineNo, columnNo, error) {
-            const err = document.createElement('div');
-            err.style.position = 'fixed';
-            err.style.top = '10px'; err.style.left = '10px';
-            err.style.background = 'red'; err.style.color = 'white';
-            err.style.padding = '10px'; err.style.zIndex = '99999';
-            err.innerText = `Error: ${msg} (${lineNo})`;
-            document.body.appendChild(err);
-        };
-    </script>
-    <script src="https://github.com/tmijs/tmi.js/releases/download/v1.8.5/tmi.min.js"></script>
-    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
-    <script src="config.js"></script>
-    <script src="js/sprites.js"></script>
-    <script src="js/twitch_chat.js"></script>
-    <script src="js/streamlabs.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

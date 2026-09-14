@@ -1,525 +1,397 @@
-/* Base Reset & Variables */
+/* 
+  APHELIOS ESP - THE DEFINITIVE GUIDE
+  Targon & Cosmic Aesthetic (Glassmorphism, Dark Theme)
+*/
+
 :root {
-    --primary-color: #00e5ff;
-    --secondary-color: #8a2be2;
-    --bg-dark: rgba(10, 10, 20, 0.85);
-    --text-light: #e0f7fa;
-    --font-heading: 'Cinzel', serif;
-    --font-body: 'Inter', sans-serif;
+  /* Targon Colors */
+  --color-bg: #0a0e17;
+  --color-surface: rgba(16, 24, 40, 0.7);
+  --color-border: rgba(94, 114, 228, 0.2);
+  --color-text-main: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  
+  --color-accent-blue: #38bdf8;
+  --color-accent-silver: #cbd5e1;
+  --color-accent-purple: #a855f7;
+
+  /* Weapon Colors */
+  --weapon-calibrum: #22c55e;
+  --weapon-severum: #ef4444;
+  --weapon-gravitum: #a855f7;
+  --weapon-infernum: #3b82f6;
+  --weapon-crescendum: #f8fafc;
+
+  /* Fonts */
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+  
+  --glass-bg: rgba(16, 24, 40, 0.6);
+  --glass-blur: blur(12px);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 1920px;
-    height: 1080px;
-    overflow: hidden;
-    background-color: transparent; /* Must be transparent for OBS overlay */
-    color: var(--text-light);
-    font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
 }
 
-/* Parallax Container */
-#parallax-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1920px;
-    height: 1080px;
-    z-index: 1;
+/* Background Effects */
+.cosmic-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  background: radial-gradient(circle at top right, #111827 0%, #0a0e17 100%);
+  pointer-events: none;
 }
 
-.layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 110%; /* Slightly larger for parallax movement */
-    height: 110%;
-    margin-left: -5%;
-    margin-top: -5%;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: #fff;
+  margin-bottom: 1rem;
 }
 
-/* Recortamos el agujero (ventana del juego) sólo en las capas de fondo sólido para no cortar los bordes del video WebM ni los personajes */
-.layer-sky, .layer-moon, .layer-mountains {
-    clip-path: polygon(
-        0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 
-        450px 430px, 450px 1060px, 1570px 1060px, 1570px 430px, 450px 430px
-    );
+h1 { font-size: 3rem; }
+h2 { font-size: 2.2rem; }
+
+/* Navigation */
+.glass-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border-bottom: var(--glass-border);
+  z-index: 100;
+  padding: 1rem 0;
 }
 
-/* Deepest */
-.layer-sky { z-index: 1; }
-.layer-moon { z-index: 2; opacity: 0.9; }
-
-/* Force absolute 100% size for the perfectly fitted cosmic background and frame */
-.layer-deep, .layer-frame {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    background-size: 100% 100%;
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
 }
 
-/* Mid Background */
-.layer-mountains { z-index: 3; }
-
-/* Breathing Cosmic Animation for the main flat image */
-.cosmic-breathe {
-    animation: cosmicBreathe 20s ease-in-out infinite alternate;
-    transform-origin: center center;
+.brand h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.brand span {
+  color: var(--color-accent-blue);
 }
 
-@keyframes cosmicBreathe {
-    0% { transform: scale(1.0); }
-    100% { transform: scale(1.03); }
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+nav a {
+  color: var(--color-text-main);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: var(--color-accent-blue);
+}
+.legacy-btn {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
-/* Atmospheric */
-.layer-fog { 
-    z-index: 6; 
-    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+/* Main Layout */
+main {
+  padding-top: 80px; /* offset nav */
 }
-.layer-particles { z-index: 7; }
-.layer-petals { z-index: 8; }
-
-/* Immediate Foreground */
-.layer-foreground { 
-    z-index: 9; 
-    background-position: bottom;
+.section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 2rem;
 }
-
-/* Game Window Frame (1120x630) */
-#game-window {
-    position: absolute;
-    bottom: 20px;
-    left: 450px;
-    width: 1120px;
-    height: 630px;
-    z-index: 10;
-    pointer-events: none; /* Let clicks pass through */
+.glass-section {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  border-radius: 12px;
 }
 
-/* SVG Border */
-.frame-border {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 12;
+/* Hero Section */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.text-glow {
+  color: var(--color-accent-blue);
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
 }
 
-.frame-path {
-    fill: none;
-    stroke: rgba(255, 255, 255, 0.1);
-    stroke-width: 2;
+.patch-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
 }
 
-.magic-energy {
-    stroke-dasharray: 200 2000;
-    animation: travel 8s linear infinite;
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.btn-primary {
+  background: var(--color-accent-blue);
+  color: #000;
+}
+.btn-primary:hover {
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--color-accent-blue);
+  border: 1px solid var(--color-accent-blue);
+  margin-left: 1rem;
+}
+.btn-secondary:hover {
+  background: rgba(56, 189, 248, 0.1);
 }
 
-@keyframes travel {
-    from { stroke-dashoffset: 2200; }
-    to { stroke-dashoffset: 0; }
+/* Weapons Grid */
+.weapons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.weapon-card {
+  background: var(--color-surface);
+  border: var(--glass-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.weapon-card:hover {
+  transform: translateY(-5px);
+}
+.weapon-card[data-weapon="calibrum"]:hover { border-color: var(--weapon-calibrum); box-shadow: 0 4px 20px rgba(34,197,94,0.2); }
+.weapon-card[data-weapon="severum"]:hover { border-color: var(--weapon-severum); box-shadow: 0 4px 20px rgba(239,68,68,0.2); }
+.weapon-card[data-weapon="gravitum"]:hover { border-color: var(--weapon-gravitum); box-shadow: 0 4px 20px rgba(168,85,247,0.2); }
+.weapon-card[data-weapon="infernum"]:hover { border-color: var(--weapon-infernum); box-shadow: 0 4px 20px rgba(59,130,246,0.2); }
+.weapon-card[data-weapon="crescendum"]:hover { border-color: var(--weapon-crescendum); box-shadow: 0 4px 20px rgba(248,250,252,0.2); }
+
+.weapon-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calibrum-bg { background: var(--weapon-calibrum); }
+.severum-bg { background: var(--weapon-severum); }
+.gravitum-bg { background: var(--weapon-gravitum); }
+.infernum-bg { background: var(--weapon-infernum); }
+.crescendum-bg { background: var(--weapon-crescendum); color: #000; }
+
+.weapon-role {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
 }
 
-.traveling-light {
-    fill: none;
-    stroke: url(#lunar-gradient);
-    stroke-width: 4;
-    stroke-dasharray: 200 4000;
-    filter: url(#glow);
-    animation: travelBorder 10s linear infinite;
+.weapon-desc {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
-@keyframes travelBorder {
-    0% { stroke-dashoffset: 4200; }
-    100% { stroke-dashoffset: 0; }
+.stat-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+  margin-right: 0.5rem;
 }
 
-/* Branding */
-#branding {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+/* Stats */
+.stats-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.source-badge {
+  font-size: 0.85rem;
+  background: rgba(255,255,255,0.05);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  text-align: center;
+}
+.stat-box {
+  background: rgba(0,0,0,0.3);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent-blue);
+}
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+.stats-footer {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+  text-align: center;
 }
 
-.brand-name {
-    font-family: var(--font-heading);
-    font-size: 48px;
-    letter-spacing: 4px;
-    background: -webkit-linear-gradient(#fff, var(--primary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+/* Simulator */
+.simulator-container {
+  padding: 2rem;
+}
+.simulator-status {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.weapon-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+.queue-list {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  height: 100px;
+}
+.weapon-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.7;
+}
+.simulator-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.simulator-log {
+  background: rgba(0,0,0,0.5);
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: monospace;
+  color: var(--color-text-muted);
+  text-align: center;
 }
 
-.brand-title {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--secondary-color);
-    letter-spacing: 2px;
+/* Matchups */
+.matchups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.matchup-card {
+  padding: 1.5rem;
+}
+.matchup-diff {
+  font-size: 0.85rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.diff-easy { background: rgba(34,197,94,0.2); color: #4ade80; }
+.diff-medium { background: rgba(234,179,8,0.2); color: #facc15; }
+.diff-hard { background: rgba(239,68,68,0.2); color: #f87171; }
+
+/* Macro */
+.macro-content h3 {
+  margin-top: 2rem;
+  color: var(--color-accent-blue);
+}
+.pro-checklist {
+  list-style: none;
+  margin-top: 1rem;
+}
+.pro-checklist li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-/* Sprites Layer */
-#sprites-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 15;
-}
-
-.sprite-container {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    z-index: 15;
-    /* initial positions to be set via JS */
-}
-
-#aphelios-container {
-    z-index: 16;
-}
-
-#aphelios-sprite {
-    background-image: url('../assets/sprites/aphelios_spritesheet.png');
-}
-
-#alune-container {
-    z-index: 15;
-    filter: drop-shadow(0 0 15px rgba(138, 43, 226, 0.8));
-    opacity: 0.85;
-}
-
-#alune-sprite {
-    background-image: url('../assets/sprites/alune_spritesheet.png');
-}
-
-/* Spritesheet Setup */
-.spritesheet {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-}
-
-.chat-bubble {
-    position: absolute;
-    top: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(10, 10, 20, 0.9);
-    border: 1px solid var(--secondary-color);
-    border-radius: 10px;
-    padding: 8px 12px;
-    color: #fff;
-    font-size: 14px;
-    white-space: nowrap;
-    box-shadow: 0 0 10px var(--secondary-color);
-    transition: opacity 0.3s;
-}
-
-.chat-bubble.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
-/* Twitch Chat (Fitted into the drawn LUNAR WHISPERS box) */
-#chat-container {
-    position: absolute;
-    right: 40px; /* Adjusting to fit inside the drawn box on the right */
-    bottom: 50px;
-    width: 320px;
-    height: 480px;
-    /* Completely transparent to let the beautiful drawn box show through */
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    z-index: 50;
-    /* Subtle glow for the text itself to ensure readability over the background */
-    text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(138, 43, 226, 0.4);
-}
-
-.chat-header {
-    font-family: var(--font-heading);
-    text-align: center;
-    padding: 12px;
-    background: rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.9);
-}
-
-#chat-messages {
-    flex: 1;
-    padding: 15px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    /* Hide scrollbar */
-    scrollbar-width: none; 
-}
-#chat-messages::-webkit-scrollbar { display: none; }
-
-.chat-message {
-    display: flex;
-    align-items: flex-start;
-    padding: 8px;
-    margin-bottom: 8px;
-    background: rgba(0,0,0,0.4);
-    border-radius: 8px;
-    font-size: 14px;
-    border-left: 3px solid transparent;
-    transition: all 0.3s;
-    line-height: 1.4;
-    word-wrap: break-word;
-    animation: slideIn 0.3s ease-out;
-}
-
-.chat-message:hover {
-    background: rgba(0,0,0,0.6);
-    border-left: 3px solid var(--primary-color);
-}
-
-.chat-avatar {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    margin-right: 10px;
-    flex-shrink: 0;
-    border: 1px solid rgba(255,255,255,0.2);
-}
-
-.chat-username {
-    font-weight: bold;
-    margin-right: 8px;
-    text-shadow: 0 0 5px currentColor;
-    white-space: nowrap;
-}
-
-.chat-text {
-    color: #e0e0e0;
-}
-
-/* Bottom HUD (Premium Glassmorphism) */
-#hud-container {
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    background: transparent;
-    padding: 10px;
-    z-index: 200;
-}
-
-.hud-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 5px 20px;
-}
-.hud-item:last-child {
-    border-right: none;
-}
-
-.hud-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--secondary-color);
-    filter: drop-shadow(0 0 8px var(--primary-color));
-    animation: floatIcon 3s ease-in-out infinite;
-}
-
-@keyframes floatIcon {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-3px); }
-    100% { transform: translateY(0); }
-}
-
-.hud-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.hud-label {
-    font-size: 0.65rem;
-    color: rgba(255, 255, 255, 0.6);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 2px;
-}
-
-.hud-value {
-    font-family: var(--font-body);
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 1);
-    text-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
-}
-
-/* Goal Bar */
-.hud-goal-container {
-    width: 100%;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 0 10px;
-}
-
-.hud-goal-label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.8rem;
-    color: var(--secondary-color);
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-shadow: 0 0 10px var(--primary-color);
-}
-
-.hud-goal-bar {
-    flex: 1;
-    height: 12px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid rgba(138, 43, 226, 0.5);
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
-}
-
-.hud-goal-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    box-shadow: 0 0 15px var(--secondary-color);
-    border-radius: 10px;
-    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hud-goal-text {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 0 0 10px var(--secondary-color);
-}
-
-
-/* Alerts */
-#alert-container {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(138,43,226,0.9) 0%, rgba(10,10,20,0.9) 100%);
-    border: 2px solid var(--primary-color);
-    box-shadow: 0 0 30px var(--primary-color);
-    border-radius: 20px;
-    padding: 30px 50px;
-    text-align: center;
-    z-index: 50;
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-#alert-container.hidden {
-    opacity: 0;
-    transform: translate(-50%, -40%) scale(0.8);
-    pointer-events: none;
-}
-
-#alert-title {
-    font-family: var(--font-heading);
-    font-size: 36px;
-    color: #fff;
-    margin-bottom: 10px;
-    text-shadow: 0 0 15px var(--primary-color);
-}
-
-#alert-message {
-    font-size: 20px;
-    color: var(--text-light);
-}
-
-@keyframes slideIn {
-    from { opacity: 0; transform: translateX(20px); }
-    to { opacity: 1; transform: translateX(0); }
-}
-
-/* Promotional Banners */
-.promo-banner {
-    position: absolute;
-    top: 50%;
-    width: 450px;
-    z-index: 100;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-    filter: drop-shadow(0 0 20px rgba(138, 43, 226, 0.4));
-}
-
-.promo-banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Left Banner (TikTok) */
-.promo-banner.left {
-    left: -500px;
-    transform: translateY(-50%);
-}
-
-.promo-banner.left.show {
-    left: 20px;
-    opacity: 1;
-    transform: translateY(-50%);
-}
-
-/* Right Banner (YouTube) */
-.promo-banner.right {
-    right: -500px;
-    transform: translateY(-50%);
-}
-
-.promo-banner.right.show {
-    right: 20px;
-    opacity: 1;
-    transform: translateY(-50%);
-}
-
-/* Effects Canvas */
-#fx-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 150;
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: var(--glass-border);
+  background: rgba(0,0,0,0.5);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
 }

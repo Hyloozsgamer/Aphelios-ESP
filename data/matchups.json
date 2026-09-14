@@ -1,0 +1,29 @@
+[
+    {
+        "id": "jinx",
+        "name": "Jinx",
+        "difficulty": 5,
+        "difficultyText": "Media (5/10)",
+        "winRate": 48.5,
+        "lanePlan": "Prioriza Calibrum para castigar su falta de movilidad temprana. No dejes que acumule minigun de gratis.",
+        "winCondition": "Teamfights con Infernum o duelos a corta distancia con Crescendum antes de que tenga 3 items."
+    },
+    {
+        "id": "draven",
+        "name": "Draven",
+        "difficulty": 8,
+        "difficultyText": "Difícil (8/10)",
+        "winRate": 46.2,
+        "lanePlan": "Juega pasivo. Usa Gravitum para ganks. Evita los all-in 2v2 a menos que tu support acierte un CC duro.",
+        "winCondition": "Sobrevivir. Escalas mejor en teamfights de 5v5 con Infernum."
+    },
+    {
+        "id": "ezreal",
+        "name": "Ezreal",
+        "difficulty": 3,
+        "difficultyText": "Fácil (3/10)",
+        "winRate": 51.2,
+        "lanePlan": "Escóndete detrás de los minions. Con Severum tienes mejor sustain que su poke. Empuja la oleada y obtén prioridad.",
+        "winCondition": "Superioridad de waveclear y DPS puro en mid-late game."
+    }
+]
