@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg" alt="Aphelios Banner" width="100%" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+  <img src="./banner.png" alt="Aphelios Banner" width="100%" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
   
   # 🌙 La Guía Definitiva de Aphelios
   **El Arma de los Fieles | Guía Nivel Challenger (Parche 16.18)**
