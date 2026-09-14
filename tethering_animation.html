@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tethering Animation</title>
+<style>
+  body {
+    background-color: #1a1a2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: #2b4f3b; /* Grass color */
+    border: 4px solid #f1c40f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  }
+  .lane-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: rgba(255,255,255,0.2);
+    top: 50%;
+    transform: translateY(-50%) rotate(25deg);
+  }
+  .champion {
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px black;
+    transition: all 1s ease-in-out;
+  }
+  /* Aphelios (Blue) */
+  #aphelios {
+    width: 40px; height: 40px;
+    background-color: #3498db;
+    border: 2px solid #fff;
+    left: 150px; top: 250px;
+  }
+  /* Support Ally (Blue) */
+  #ally-supp {
+    width: 35px; height: 35px;
+    background-color: #2ecc71;
+    border: 2px solid #fff;
+    left: 150px; top: 150px;
+  }
+  /* Enemy ADC (Red) */
+  #enemy-adc {
+    width: 40px; height: 40px;
+    background-color: #e74c3c;
+    border: 2px solid #fff;
+    left: 400px; top: 250px;
+  }
+  /* Enemy Supp (Red) */
+  #enemy-supp {
+    width: 35px; height: 35px;
+    background-color: #e67e22;
+    border: 2px solid #fff;
+    left: 400px; top: 150px;
+  }
+  
+  /* The Triangle Line */
+  .triangle-svg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+  }
+  
+  .minions {
+    position: absolute;
+    left: 275px; top: 180px;
+    width: 50px; height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+  .minion {
+    width: 15px; height: 15px;
+    background: #bdc3c7;
+    border-radius: 50%;
+  }
+
+  .label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f1c40f;
+  }
+  
+  .desc {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    max-width: 250px;
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="lane-line"></div>
+  
+  <svg class="triangle-svg">
+    <line id="line1" stroke="rgba(241, 196, 15, 0.5)" stroke-width="3" stroke-dasharray="5,5" />
+    <line id="line2" stroke="rgba(241, 196, 15, 0.5)" stroke-width="3" stroke-dasharray="5,5" />
+    <line id="line3" stroke="rgba(241, 196, 15, 0.5)" stroke-width="3" stroke-dasharray="5,5" />
+  </svg>
+
+  <div class="minions">
+    <div class="minion"></div><div class="minion"></div>
+    <div class="minion"></div><div class="minion"></div>
+  </div>
+
+  <div id="aphelios" class="champion">APH</div>
+  <div id="ally-supp" class="champion">SUP</div>
+  
+  <div id="enemy-adc" class="champion">ADC</div>
+  <div id="enemy-supp" class="champion">SUP</div>
+  
+  <div class="label" id="state-label">Tethering Seguro</div>
+  <div class="desc" id="state-desc">Mantienes la paralela diagonal con tu support.</div>
+</div>
+
+<script>
+  const aph = document.getElementById('aphelios');
+  const sup = document.getElementById('ally-supp');
+  const eAdc = document.getElementById('enemy-adc');
+  const eSup = document.getElementById('enemy-supp');
+  
+  const l1 = document.getElementById('line1');
+  const l2 = document.getElementById('line2');
+  const l3 = document.getElementById('line3');
+  
+  const label = document.getElementById('state-label');
+  const desc = document.getElementById('state-desc');
+
+  function updateLines() {
+    const rA = aph.getBoundingClientRect();
+    const rS = sup.getBoundingClientRect();
+    const rEA = eAdc.getBoundingClientRect();
+    const rES = eSup.getBoundingClientRect();
+    const c = document.querySelector('.container').getBoundingClientRect();
+    
+    // Draw triangle between Aphelios, Ally Supp, and Enemy ADC
+    l1.setAttribute('x1', rA.left - c.left + 20);
+    l1.setAttribute('y1', rA.top - c.top + 20);
+    l1.setAttribute('x2', rS.left - c.left + 17);
+    l1.setAttribute('y2', rS.top - c.top + 17);
+    
+    l2.setAttribute('x1', rA.left - c.left + 20);
+    l2.setAttribute('y1', rA.top - c.top + 20);
+    l2.setAttribute('x2', rEA.left - c.left + 20);
+    l2.setAttribute('y2', rEA.top - c.top + 20);
+    
+    l3.setAttribute('x1', rS.left - c.left + 17);
+    l3.setAttribute('y1', rS.top - c.top + 17);
+    l3.setAttribute('x2', rEA.left - c.left + 20);
+    l3.setAttribute('y2', rEA.top - c.top + 20);
+    
+    requestAnimationFrame(updateLines);
+  }
+  updateLines();
+
+  const states = [
+    {
+      // Frame 1: Safe
+      a: {x: 150, y: 250}, s: {x: 150, y: 150},
+      ea: {x: 400, y: 250}, es: {x: 400, y: 150},
+      lbl: "Fase de Líneas", d: "Posición paralela perfecta. Triángulo seguro."
+    },
+    {
+      // Frame 2: Enemy steps up, Supp steps back
+      a: {x: 150, y: 250}, s: {x: 80, y: 150},
+      ea: {x: 350, y: 250}, es: {x: 350, y: 150},
+      lbl: "Peligro Inminente", d: "El Support retrocede. El triángulo se rompe. Peligro de 2v1."
+    },
+    {
+      // Frame 3: Aphelios tethers back
+      a: {x: 80, y: 250}, s: {x: 80, y: 150},
+      ea: {x: 350, y: 250}, es: {x: 350, y: 150},
+      lbl: "Tethering Correcto", d: "Aphelios retrocede al instante (Tether). Triángulo restaurado."
+    },
+    {
+      // Frame 4: Engage
+      a: {x: 200, y: 250}, s: {x: 250, y: 150},
+      ea: {x: 300, y: 250}, es: {x: 350, y: 150},
+      lbl: "Iniciación", d: "Avanzan juntos manteniendo la estructura."
+    }
+  ];
+
+  let current = 0;
+  setInterval(() => {
+    current = (current + 1) % states.length;
+    const st = states[current];
+    
+    aph.style.left = st.a.x + 'px'; aph.style.top = st.a.y + 'px';
+    sup.style.left = st.s.x + 'px'; sup.style.top = st.s.y + 'px';
+    eAdc.style.left = st.ea.x + 'px'; eAdc.style.top = st.ea.y + 'px';
+    eSup.style.left = st.es.x + 'px'; eSup.style.top = st.es.y + 'px';
+    
+    label.innerText = st.lbl;
+    desc.innerText = st.d;
+  }, 2500);
+
+</script>
+</body>
+</html>

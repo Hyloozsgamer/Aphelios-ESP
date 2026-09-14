@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./banner.png" alt="Aphelios Banner" width="100%" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+  <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg" alt="Aphelios Banner" width="100%" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
   
   # 🌙 La Guía Definitiva de Aphelios
   **El Arma de los Fieles | Guía Nivel Challenger (Parche 16.18)**
@@ -24,7 +24,7 @@ Aphelios no tiene habilidad 'E', sus habilidades escalan pasivamente con tu nive
 
 ### <img src="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/item/3340.png" width="30"> Fase de Líneas y Posicionamiento Geométrico
 <div align="center">
-  <img src="https://static.wikia.nocookie.net/leagueoflegends/images/0/04/Summoner%27s_Rift_Minimap.png" alt="Mapa Grieta" width="350" style="border-radius: 10px; border: 2px solid #555;">
+  <img src="./assets/tethering_timelapse.webp" alt="Tethering Timelapse" width="500" style="border-radius: 10px; border: 2px solid #f1c40f; box-shadow: 0 0 15px rgba(241,196,15,0.4);">
   <br><i>(El posicionamiento ideal siempre es formar un triángulo con tu support detrás de los minions magos)</i>
 </div>
 
