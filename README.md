@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg" alt="Aphelios Banner" width="100%" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+  <img src="./assets/banner.png" alt="Aphelios Banner" width="100%">
   
   # <img src="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/item/3363.png" width="25" style="vertical-align: middle; border-radius: 5px;"> La Guía Definitiva de Aphelios
   **Masterclass Nivel Challenger: Posicionamiento, Geometría y Macroestrategia**
