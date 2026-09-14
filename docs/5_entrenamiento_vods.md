@@ -65,4 +65,66 @@ graph TD
 
 *(Puedes copiar la estructura lógica superior para adaptarla a cualquier Asesino o Magos de Control)*
 
+---
+
+## 6. Los Maestros del Arma (A Quién Estudiar)
+
+Para dominar a Aphelios, **no debes copiar a un solo jugador**. Debes extraer la mayor fortaleza de cada experto mundial y fusionarlas.
+
+### Los Profesionales (Piezas del Rompecabezas)
+Si mides el rendimiento competitivo acumulado, estos son los monstruos que definen el límite mecánico de Aphelios. Busca sus VODs en YouTube (Ej: *"Ruler Aphelios Pro View"*).
+
+* **Ruler** ➔ **Posicionamiento y DPS:** Con un 74.6% WR histórico en 63 partidas profesionales, Ruler te enseñará a mantener la distancia perfecta (Spacing) y cómo hacer daño constante sin morir.
+* **Viper** ➔ **Mecánicas y Límites:** Úsalo para aprender *Animation Canceling* perfecto y cómo pelear duelos 1v1 que parecen imposibles.
+* **GALA** ➔ **Teamfights (Peleas de Equipo):** Juega 87 partidas competitivas. Maestro absoluto en el caos de 5v5.
+* **Peyz** ➔ **El ADC Moderno:** Fluidez y posicionamiento vanguardista.
+* **Gumayusi** ➔ **Ejecución Front-to-Back:** Obsérvalo para aprender a derretir a la Frontline enemiga de forma metódica y segura.
+* **JackeyLove** ➔ **Agresividad y Ventanas de Daño:** Te enseñará los límites del *Damage Greed* calculado. Cuándo usar destello hacia adelante (Flash Forward) para exterminar al equipo enemigo.
+
+> **La Quimera Perfecta:** *Macro de Ruler + Spacing de Viper + Teamfight de GALA + Agresividad de JackeyLove.*
+
+---
+
+### La Élite del SoloQ (OTPs Globales)
+A diferencia de los profesionales que juegan con equipos coordinados, estos jugadores te enseñarán cómo ganar partidas caóticas en *SoloQ*.
+
+| Rango | Jugador | Región | Elo (LP) | WR Aphelios | Partidas |
+|:---:|---|:---:|---:|---:|---:|
+| <img src="https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/tier-challenger.png" width="30"> | **APHELIKING#6666** | EUNE | Challenger 2635 LP | **63.8%** | 351 |
+| <img src="https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/tier-challenger.png" width="30"> | **POLSKI GUMAYUSI#SKTT1** | EUNE | Challenger 2398 LP | 55.5% | **695** |
+| <img src="https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/tier-challenger.png" width="30"> | **aa5a#aaa** | 🇰🇷 KR | Challenger 1852 LP | **57.2%** | 367 |
+| <img src="https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/tier-grandmaster.png" width="30"> | **Korotsuka#0211** | 🇧🇷 BR | Grandmaster 1862 LP | 58.6% | 237 |
+| <img src="https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/tier-grandmaster.png" width="30"> | **Sorcerer Supreme#7777** | EUNE | Grandmaster 1944 LP | 78.8% | 33 |
+| <img src="https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/tier-challenger.png" width="30"> | **Chill1000#larry** | 🇪🇺 EUW | Challenger 2326 LP | 54.3% | 219 |
+| <img src="https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/tier-master.png" width="30"> | **Ancano#1999** | 🇪🇺 EUW | Master ~1300 LP | **72.0%** | 125 |
+| <img src="https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/tier-grandmaster.png" width="30"> | **lil hurk#NA1** | 🇺🇸 NA | Grandmaster 1283 LP | **61.7%** | 162 |
+| <img src="https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/tier-challenger.png" width="30"> | **bbeNjlol#001** | 🇧🇷 BR | Challenger 2147 LP | 56.1% | 164 |
+
+*(Fuente y Rankings en Tiempo Real: [League of Graphs - Aphelios Rankings](https://www.leagueofgraphs.com/rankings/summoners/aphelios))*
+
+---
+
+### Directorio de Streamers y VODs
+Para ver transmisiones de OTPs (One-Trick Ponies) en directo o repeticiones de partidas específicas contra ciertos campeones, utiliza el ecosistema de **Onetricks.gg**.
+
+<table style="border-collapse: collapse; width: 100%; border: 1px solid #444;">
+  <tr style="background-color: #222;">
+    <th style="padding: 10px; border-bottom: 2px solid #555;">Plataforma</th>
+    <th style="padding: 10px; border-bottom: 2px solid #555;">Recurso</th>
+    <th style="padding: 10px; border-bottom: 2px solid #555;">Estado (Live/VOD)</th>
+  </tr>
+  <tr>
+    <td align="center" style="padding: 10px; border-bottom: 1px solid #444;">
+      <img src="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/item/3364.png" width="30" style="border-radius: 5px;"><br><b>OneTricks.gg</b>
+    </td>
+    <td style="padding: 10px; border-bottom: 1px solid #444;">
+      <a href="https://www.onetricks.gg/es/champions/streamers/Aphelios"><b>Directorio Global de Streamers de Aphelios</b></a><br>
+      <i>Sigue a jugadores como 'timelessefls' (Rank 1 EUW) y Challengers coreanos.</i>
+    </td>
+    <td align="center" style="padding: 10px; border-bottom: 1px solid #444;">
+      <span style="color: #e74c3c; font-weight: bold;">🔴 DIRECTOS Y VODs</span>
+    </td>
+  </tr>
+</table>
+
 [⬅️ Volver al Índice Principal](../README.md)
