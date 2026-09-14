@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <rect width="400" height="250" fill="#2b4f3b" rx="10"/>
+  <line x1="0" y1="200" x2="400" y2="50" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- Minions -->
+  <circle cx="200" cy="120" r="5" fill="#bdc3c7"/>
+  <circle cx="215" cy="115" r="5" fill="#bdc3c7"/>
+  <circle cx="200" cy="135" r="5" fill="#bdc3c7"/>
+  
+  <!-- Broken Triangle -->
+  <polygon points="120,170 70,90 250,170" fill="none" stroke="rgba(231, 76, 60, 0.8)" stroke-width="3" stroke-dasharray="5,5"/>
+  
+  <!-- Movement Arrows -->
+  <path d="M 120 90 L 70 90" stroke="#fff" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 280 170 L 250 170" stroke="#fff" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 280 90 L 250 90" stroke="#fff" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Danger Zone -->
+  <circle cx="120" cy="170" r="30" fill="rgba(231, 76, 60, 0.3)"/>
+  
+  <!-- Champions -->
+  <!-- Aphelios -->
+  <circle cx="120" cy="170" r="15" fill="#3498db" stroke="#fff" stroke-width="2"/>
+  <text x="120" y="174" font-family="Arial" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">APH</text>
+  
+  <!-- Ally Supp (Moved back) -->
+  <circle cx="70" cy="90" r="12" fill="#2ecc71" stroke="#fff" stroke-width="2"/>
+  <text x="70" y="94" font-family="Arial" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">SUP</text>
+  
+  <!-- Enemy ADC (Moved forward) -->
+  <circle cx="250" cy="170" r="15" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
+  <text x="250" y="174" font-family="Arial" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">ADC</text>
+  
+  <!-- Enemy Supp (Moved forward) -->
+  <circle cx="250" cy="90" r="12" fill="#e67e22" stroke="#fff" stroke-width="2"/>
+  <text x="250" y="94" font-family="Arial" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">SUP</text>
+</svg>

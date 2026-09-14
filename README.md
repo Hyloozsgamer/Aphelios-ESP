@@ -24,8 +24,26 @@ Aphelios no tiene habilidad 'E', sus habilidades escalan pasivamente con tu nive
 
 ### <img src="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/item/3364.png" width="20" style="vertical-align: middle;"> Fase de Líneas y Posicionamiento Geométrico
 <div align="center">
-  <img src="./assets/tethering_timelapse.webp" alt="Tethering Timelapse" width="500" style="border-radius: 10px; border: 2px solid #f1c40f; box-shadow: 0 0 15px rgba(241,196,15,0.4);">
-  <br><i>(El posicionamiento ideal siempre es formar un triángulo con tu support detrás de los minions magos)</i>
+  <table style="text-align: center; border: 2px solid #555; background-color: #111; color: #eee; border-radius: 10px;">
+    <tr>
+      <th colspan="3" style="font-size: 1.2em; color: #f1c40f;">Simulador Táctico: El Arte del Tethering</th>
+    </tr>
+    <tr>
+      <td width="33%"><b>Fase 1: Formación Segura</b></td>
+      <td width="33%"><b>Fase 2: El Enemigo Avanza</b></td>
+      <td width="33%"><b>Fase 3: Re-Posicionamiento</b></td>
+    </tr>
+    <tr>
+      <td><img src="./assets/frame1.svg" width="100%"></td>
+      <td><img src="./assets/frame2.svg" width="100%"></td>
+      <td><img src="./assets/frame3.svg" width="100%"></td>
+    </tr>
+    <tr style="font-size: 0.9em; color: #ccc;">
+      <td>Mantienes la paralela diagonal exacta con tu Support. El triángulo es perfecto.</td>
+      <td>El Support enemigo avanza y el tuyo retrocede. El triángulo colapsa (Zona Roja de Peligro 2v1).</td>
+      <td>Aphelios retrocede inmediatamente la misma distancia (Tether). Triángulo Verde restaurado.</td>
+    </tr>
+  </table>
 </div>
 
 1. **Jugar detrás de la Línea de Minions Magos:** Al tener 550 de rango base, nunca debes pararte al lado de los minions cuerpo a cuerpo. Usa a tus propios súbditos como escudo humano contra ganchos enemigos.
